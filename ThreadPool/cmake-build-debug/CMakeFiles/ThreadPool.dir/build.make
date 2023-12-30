@@ -69,10 +69,24 @@ include CMakeFiles/ThreadPool.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ThreadPool.dir/flags.make
 
+CMakeFiles/ThreadPool.dir/main.c.o: CMakeFiles/ThreadPool.dir/flags.make
+CMakeFiles/ThreadPool.dir/main.c.o: /tmp/tmp.YVYOGy7Q3t/main.c
+CMakeFiles/ThreadPool.dir/main.c.o: CMakeFiles/ThreadPool.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ThreadPool.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ThreadPool.dir/main.c.o -MF CMakeFiles/ThreadPool.dir/main.c.o.d -o CMakeFiles/ThreadPool.dir/main.c.o -c /tmp/tmp.YVYOGy7Q3t/main.c
+
+CMakeFiles/ThreadPool.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ThreadPool.dir/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/tmp.YVYOGy7Q3t/main.c > CMakeFiles/ThreadPool.dir/main.c.i
+
+CMakeFiles/ThreadPool.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ThreadPool.dir/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/tmp.YVYOGy7Q3t/main.c -o CMakeFiles/ThreadPool.dir/main.c.s
+
 CMakeFiles/ThreadPool.dir/main.cpp.o: CMakeFiles/ThreadPool.dir/flags.make
 CMakeFiles/ThreadPool.dir/main.cpp.o: /tmp/tmp.YVYOGy7Q3t/main.cpp
 CMakeFiles/ThreadPool.dir/main.cpp.o: CMakeFiles/ThreadPool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ThreadPool.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ThreadPool.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ThreadPool.dir/main.cpp.o -MF CMakeFiles/ThreadPool.dir/main.cpp.o.d -o CMakeFiles/ThreadPool.dir/main.cpp.o -c /tmp/tmp.YVYOGy7Q3t/main.cpp
 
 CMakeFiles/ThreadPool.dir/main.cpp.i: cmake_force
@@ -83,17 +97,35 @@ CMakeFiles/ThreadPool.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThreadPool.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.YVYOGy7Q3t/main.cpp -o CMakeFiles/ThreadPool.dir/main.cpp.s
 
+CMakeFiles/ThreadPool.dir/threadpool.c.o: CMakeFiles/ThreadPool.dir/flags.make
+CMakeFiles/ThreadPool.dir/threadpool.c.o: /tmp/tmp.YVYOGy7Q3t/threadpool.c
+CMakeFiles/ThreadPool.dir/threadpool.c.o: CMakeFiles/ThreadPool.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ThreadPool.dir/threadpool.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ThreadPool.dir/threadpool.c.o -MF CMakeFiles/ThreadPool.dir/threadpool.c.o.d -o CMakeFiles/ThreadPool.dir/threadpool.c.o -c /tmp/tmp.YVYOGy7Q3t/threadpool.c
+
+CMakeFiles/ThreadPool.dir/threadpool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ThreadPool.dir/threadpool.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/tmp.YVYOGy7Q3t/threadpool.c > CMakeFiles/ThreadPool.dir/threadpool.c.i
+
+CMakeFiles/ThreadPool.dir/threadpool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ThreadPool.dir/threadpool.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/tmp.YVYOGy7Q3t/threadpool.c -o CMakeFiles/ThreadPool.dir/threadpool.c.s
+
 # Object files for target ThreadPool
 ThreadPool_OBJECTS = \
-"CMakeFiles/ThreadPool.dir/main.cpp.o"
+"CMakeFiles/ThreadPool.dir/main.c.o" \
+"CMakeFiles/ThreadPool.dir/main.cpp.o" \
+"CMakeFiles/ThreadPool.dir/threadpool.c.o"
 
 # External object files for target ThreadPool
 ThreadPool_EXTERNAL_OBJECTS =
 
+ThreadPool: CMakeFiles/ThreadPool.dir/main.c.o
 ThreadPool: CMakeFiles/ThreadPool.dir/main.cpp.o
+ThreadPool: CMakeFiles/ThreadPool.dir/threadpool.c.o
 ThreadPool: CMakeFiles/ThreadPool.dir/build.make
 ThreadPool: CMakeFiles/ThreadPool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ThreadPool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ThreadPool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThreadPool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

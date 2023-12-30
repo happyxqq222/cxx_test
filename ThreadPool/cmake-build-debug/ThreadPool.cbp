@@ -82,7 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/tmp/tmp.YVYOGy7Q3t/main.c">
+			<Option target="ThreadPool"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.YVYOGy7Q3t/main.cpp">
+			<Option target="ThreadPool"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.YVYOGy7Q3t/threadpool.c">
+			<Option target="ThreadPool"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.YVYOGy7Q3t/threadpool.h">
 			<Option target="ThreadPool"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.YVYOGy7Q3t/CMakeLists.txt">

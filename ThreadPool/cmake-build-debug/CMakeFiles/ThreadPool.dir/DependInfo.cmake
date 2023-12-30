@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/tmp/tmp.YVYOGy7Q3t/main.c" "CMakeFiles/ThreadPool.dir/main.c.o" "gcc" "CMakeFiles/ThreadPool.dir/main.c.o.d"
+  "/tmp/tmp.YVYOGy7Q3t/threadpool.c" "CMakeFiles/ThreadPool.dir/threadpool.c.o" "gcc" "CMakeFiles/ThreadPool.dir/threadpool.c.o.d"
   "/tmp/tmp.YVYOGy7Q3t/main.cpp" "CMakeFiles/ThreadPool.dir/main.cpp.o" "gcc" "CMakeFiles/ThreadPool.dir/main.cpp.o.d"
   )
 

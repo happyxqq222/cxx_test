@@ -38,7 +38,15 @@ typedef struct ThreadPool {
 ThreadPool *threadPoolCreate(int min, int max, int queueSize) {
     ThreadPool *pool = (ThreadPool *) malloc(sizeof(ThreadPool));
     if(pool == NULL){
-
+        printf("malloc threadpool fail...\n");
+        return NULL;
     }
+    pool->threadIDs = (pthread_t *)malloc(sizeof(pthread_t) * max);
+    if(pool -> threadIDs == NULL){
+        printf("malloc threadIDs fail...\n");
+        return NULL;
+    }
+
+
 
 }

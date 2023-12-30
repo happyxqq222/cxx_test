@@ -18,6 +18,7 @@
 *.ipr
 .idea/workspace.xml
 .idea/*
+cmake-build-debug/*
 ### NetBeans ###
 /nbproject/private/
 /build/
@@ -25,4 +26,3 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-cmake-build-debug/
