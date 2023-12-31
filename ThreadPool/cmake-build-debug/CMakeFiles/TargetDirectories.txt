@@ -1,3 +1,0 @@
-/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles/ThreadPool.dir
-/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles/edit_cache.dir
-/tmp/tmp.YVYOGy7Q3t/cmake-build-debug/CMakeFiles/rebuild_cache.dir
