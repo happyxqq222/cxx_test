@@ -3,4 +3,7 @@ project(MemoryPool)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(MemoryPool main.cpp)
+aux_source_directory(${PROJECT_SOURCE_DIR} SRC)
+
+
+add_executable(MemoryPool ${SRC})
