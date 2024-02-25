@@ -2,8 +2,8 @@
 // Created by Administrator on 2024-02-23.
 //
 
-#ifndef MEMORYPOOL_POOLALLOCATOR_H
-#define MEMORYPOOL_POOLALLOCATOR_H
+#ifndef MEMORYPOOL_SGIPOOLALLOCATOR_H
+#define MEMORYPOOL_SGIPOOLALLOCATOR_H
 #include <mutex>
 
 template<typename _Tp>
@@ -194,4 +194,4 @@ char *myallocator<T>::chunkAlloc(size_t size, int &objs) {
     }
 
 }
-#endif //MEMORYPOOL_POOLALLOCATOR_H
+#endif //MEMORYPOOL_SGIPOOLALLOCATOR_H

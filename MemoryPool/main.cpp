@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "PoolAllocator.h"
+#include "SgiPoolAllocator.h"
 
 int main() {
     myallocator<int> m;
@@ -12,5 +12,6 @@ int main() {
     for(auto& a : v){
         std::cout << a << std::endl;
     }
+
     return 0;
 }
