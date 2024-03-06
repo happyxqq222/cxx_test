@@ -60,8 +60,6 @@ public:
     T& get(){
         return std::get<T>(inner);
     }
-
-public:
     /**
      * json parse method
      * @param json   json str
@@ -69,12 +67,14 @@ public:
      */
     static std::pair<JSONObject,size_t> parse(std::string_view json);
 
-
+private:
     template<typename T>
     static std::optional<T> try_parse_num(std::string_view str);
 
 
     static size_t illegalCharaceter(std::string_view json);
+
+    static char unescaped_char(char c);
 
 };
 
@@ -102,7 +102,6 @@ std::pair<JSONObject, size_t> JSONObject::parse(std::string_view json) {
             return {JSONObject(false),5};
         }
     }else if(json.find_first_of("null") == 0){    //handle null type
-        std::cout << "null";
         return {JSONObject(nullptr),4};
     }else if(json[0] >= '0' && json[0] <= '9' || json[0] == '+' || json[0] == '-') {    //parse int type or float type
         std::regex num_re{"[+-]?[0-9]+(\\.[0-9]*)?([eE][+-]?[0-9]+)?"};
@@ -135,12 +134,6 @@ std::pair<JSONObject, size_t> JSONObject::parse(std::string_view json) {
             }
             std::string key = std::get<std::string>(keyObj.inner);
             i = i +keyEaten;
-            if(key == "kk"){
-                i = i;
-            }
-            if(key == "obj"){
-                i = i;
-            }
 
 
             if(json[i] == ':'){
@@ -231,7 +224,7 @@ std::pair<JSONObject, size_t> JSONObject::parse(std::string_view json) {
     return {JSONObject{nullptr},0};
 }
 
-char unescaped_char(char c){
+char JSONObject::unescaped_char(char c){
     switch(c){
         case 'n': return '\n';
         case 'r': return '\r';

@@ -8,7 +8,7 @@ using namespace std;
 
 static constexpr std::string_view legal_escaped = " \r\n\t\v\f\0";
 
-int main()
+int main1()
 {
     std::string json_text = R"(
                 {
