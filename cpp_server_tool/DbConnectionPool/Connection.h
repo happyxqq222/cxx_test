@@ -30,24 +30,32 @@ public:
      * @return
      */
     bool connect(const std::string& ip,
-                 uint16_t port,
+                 uint32_t port,
                  const std::string& user,
                  const std::string& password,
                  const std::string& dbname);
     /**
-     * ¸üÐÂsql
+     * update sql
      * @param sql
      * @return
      */
     bool update(std::string_view sql);
     /**
-     * ²éÑ¯sql
+     * query sql
      * @param sql
      * @return
      */
     MYSQL_RES* query(std::string& sql);
+
+    void refreshAliveTime(){
+        _alivetime = clock();
+    };
+    clock_t  getAliveTime() {
+        return clock() - _alivetime;
+    };
 private:
     MYSQL* _conn;
+    clock_t _alivetime; //idle time
 };
 
 

@@ -18,7 +18,7 @@ Connection::~Connection() {
 
 bool
 Connection::connect(const std::string &ip,
-                    uint16_t port,
+                    uint32_t port,
                     const std::string &user,
                     const std::string &password,
                     const std::string &dbname) {

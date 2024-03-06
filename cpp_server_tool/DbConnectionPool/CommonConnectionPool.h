@@ -8,28 +8,58 @@
 #include <string>
 #include <queue>
 #include <mutex>
+#include <atomic>
+#include <functional>
+#include <thread>
+#include <condition_variable>
 #include "Connection.h"
 
+using namespace std::literals;
 
 class ConnectionPool {
 public:
     static ConnectionPool* getConnectionPool();
+    //get available connection
+    std::shared_ptr<Connection> getConnection();
+    ~ConnectionPool();
 private:
     ConnectionPool();  //单例#构造函数私有化
-    //从配置文件中加载配置
+    //load config from config file
     bool loadConfigFile();
+    //put connection into connection pool
+    void recyleConnection(Connection* conn);
+    //for produce new connection in a new connection
+    void produceConnectionTask();
+    void scanConectionTask();
 private:
-    std::string _ip;
-    uint16_t _port;
-    std::string _username;
-    std::string _password;
-    uint32_t _initSize;   //初始连接量
-    uint32_t _maxSize;    //连接池最大连接量
-    uint32_t _maxIdleTime;  //连接池最大空闲时间
-    uint32_t _connectionTimeout;   //连接池获取连接的超时时间
+    std::string ip;
+    uint32_t port;
+    std::string username;
+    std::string password;
+    std::string dbname;
+    uint32_t initSize;   //db connection initialize size
+    uint32_t maxSize;    //db connnection maximum size
+    uint32_t maxIdleTime;  //db connection max idle time
+    uint32_t connectionTimeout;
 
-    std::queue<Connection*> _connectionQueue; //存储mysql连接的队列
-    std::recursive_mutex _queueMutex;   //维护连接队列的线程互斥安全锁
+    std::queue<Connection*> _connectionQueue; //this queue for store connection
+    std::mutex _queueMutex;   //
+    std::atomic_int _connectionCnt;
+    std::condition_variable cv;  // its use for communicate between producer and consumer
+    std::thread producerThread;
+    std::thread scannerThread;
+
+    struct FileStreamHelper{
+        FileStreamHelper(const FileStreamHelper& helper) = delete;
+        FileStreamHelper& operator=(const FileStreamHelper& helper) = delete;
+        FileStreamHelper(std::ifstream& _fstream): fstream(_fstream){
+        }
+        ~FileStreamHelper(){
+            fstream.close();
+        }
+    private:
+        std::ifstream& fstream;
+    };
 };
 
 
