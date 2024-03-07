@@ -3,18 +3,28 @@
 //
 #include <iostream>
 #include <atomic>
+#include "ThreadPool.h"
 
 using namespace std;
 
 
+class MyTask : public Task
+{
+public:
+    int run() override{
+        cout << "Mytask: " << name << endl;
+        return 0;
+    }
+    string name = "";
+};
+
 int main() {
-    int j = 33;
-    cout << j << endl;
-    int value = 10;
-    atomic<int> ai = 10;
-    ai.fetch_add(1);
-    int expectValue = 10;
-    atomic_compare_exchange_strong(&ai, &expectValue, 11);
-    cout << ai << endl;
+    ThreadPool pool;
+    pool.init(16);
+    pool.start();
+    MyTask task;
+    task.name = "test name 001";
+    pool.addTask(&task);
+    getchar();
     return 1;
 }

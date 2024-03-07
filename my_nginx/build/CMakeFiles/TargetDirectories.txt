@@ -1,0 +1,3 @@
+C:/study/cxx_code/my_nginx/build/CMakeFiles/my_nginx.dir
+C:/study/cxx_code/my_nginx/build/CMakeFiles/edit_cache.dir
+C:/study/cxx_code/my_nginx/build/CMakeFiles/rebuild_cache.dir
