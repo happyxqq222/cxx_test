@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/study/cxx_code/my_nginx/build",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE   -g -std=gnu++17 -o CMakeFiles\\my_nginx.dir\\main.cpp.obj -c C:\\study\\cxx_code\\my_nginx\\main.cpp",
-  "file": "C:/study/cxx_code/my_nginx/main.cpp",
-  "output": "CMakeFiles/my_nginx.dir/main.cpp.obj"
-}
-]

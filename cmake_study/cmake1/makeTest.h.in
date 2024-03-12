@@ -1,0 +1,5 @@
+#define cmake1_VERSION_MAJOR ${cmake1_VERSION_MAJOR}
+#define cmake1_VERSION_MINOR @cmake1_VERSION_MINOR@
+#define STR_TEST "${STR_TEST}"
+
+#cmakedefine USER_MYMATH

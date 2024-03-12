@@ -2,22 +2,60 @@
 // Created by Administrator on 2024-03-07.
 //
 #include <stdio.h>
-#include <unistd.h>
 
-#include "ngx_func.h"  //头文件路径，已经使用gcc -I参数指定了
+#define SPDLOG_ACTIVE_LEVEL SPDLOG_LEVEL_INFO
+
+#include <iostream>
+#include "ngx_func.h"  
 #include "ngx_signal.h"
+#include "app/ngx_c_conf.h"
+#include <thread>
+#include <chrono>
+#include "unistd.h"
+#include "app/Environment.h"
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/sinks/rotating_file_sink.h"
+#include "spdlog/async.h"
+#include "signal/ngx_signal.h"
+#include "NginxProcess.h"
 
-int main(int argc, char *const *argv)
+
+using namespace std;
+pid_t ngx_pid;               //褰撳墠杩涚▼鐨刾id
+pid_t ngx_parent;            //鐖惰繘绋嬬殑pid
+
+//shared_ptr<spdlog::async_logger> logger;
+void initlog()
+{    using namespace std::literals;
+    spdlog::init_thread_pool(8192, 1);
+    auto stdout_sink = std::make_shared<spdlog::sinks::stdout_color_sink_mt >();
+    auto rotating_sink = std::make_shared<spdlog::sinks::rotating_file_sink_mt>("logs/mylog", 1024*1024*10, 3);
+    std::vector<spdlog::sink_ptr> sinks {stdout_sink, rotating_sink};
+    auto logger = std::make_shared<spdlog::async_logger>("nginx", sinks.begin(), sinks.end(), spdlog::thread_pool(), spdlog::async_overflow_policy::block);
+    logger->set_pattern("[%@] [%l] [%Y:%H:%M:%S %z] [thread %t] %v");
+    spdlog::register_logger(logger);
+}
+
+int main(int argc, char * argv[])
 {
-    printf("非常高兴，大家和老师一起学习《linux c++通讯架构实战》\n");
-    myconf();
-    mysignal();
+    initlog();
 
-    /*for(;;)
-    {
-        sleep(1); //休息1秒
-        printf("休息1秒\n");
-    }*/
-    printf("程序退出，再见!\n");
+    Environment::getInstance(argc,argv);
+
+    ngx_init_signals();
+
+    CConfig * cConfig = CConfig::getInstance();
+    if(cConfig != nullptr && cConfig->load("nginx.conf") == false){
+        printf("error\n");
+        exit(1);
+    }
+
+    NginxProcess::getInstance();
+
+
+    for(;;){
+        this_thread::sleep_for(chrono::seconds(1));
+    }
     return 0;
 }

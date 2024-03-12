@@ -5,7 +5,8 @@
 #ifndef MY_NGINX_NGX_FUNC_H
 #define MY_NGINX_NGX_FUNC_H
 
-//º¯ÊýÉùÃ÷
-void myconf();
+
+void ngx_init_setproctitle();
+void ngx_setproctitle(const char *title);
 
 #endif //MY_NGINX_NGX_FUNC_H

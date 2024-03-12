@@ -4,7 +4,5 @@
 
 #ifndef MY_NGINX_NGX_SIGNAL_H
 #define MY_NGINX_NGX_SIGNAL_H
-//º¯ÊýÉùÃ÷
-void mysignal();
 
 #endif //MY_NGINX_NGX_SIGNAL_H
