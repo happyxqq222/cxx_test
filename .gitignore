@@ -1,5 +1,7 @@
 /target/
 */target/
+*/cmake-build-debug/
+*/cmake-build-debug-remote-host/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
