@@ -27,6 +27,6 @@ void Logger::initLogger() {
     isInitialize = true;
 }
 
-shared_ptr<spdlog::async_logger> Logger::getLogger() {
-    return logger_;
+spdlog::async_logger* Logger::getLogger() {
+    return logger_.get();
 }

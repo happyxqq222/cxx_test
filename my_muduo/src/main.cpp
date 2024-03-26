@@ -4,6 +4,7 @@
 #include "Timestamp.h"
 #include "InetAddress.h"
 #include <boost/type_index.hpp>
+#include <sys/epoll.h>
 
 using namespace std;
 using namespace std::chrono;
@@ -12,7 +13,8 @@ using namespace boost::typeindex;
 
 int main() {
     Logger::initLogger();
-    InetAddress inetAddress(88,"192.168.47.10");
-    cout << inetAddress.toIpPort() << endl;
+    vector<int> a(10);
+    cout << a.size() << " " << a.capacity() << endl;
+
     return 0;
 }

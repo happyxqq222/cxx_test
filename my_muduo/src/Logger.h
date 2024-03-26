@@ -16,7 +16,7 @@
 class Logger : noncopyable {
 public:
     static void initLogger();
-    static std::shared_ptr<spdlog::async_logger> getLogger();
+    static spdlog::async_logger* getLogger();
 private:
     static std::shared_ptr<spdlog::async_logger> logger_;
     static bool isInitialize;

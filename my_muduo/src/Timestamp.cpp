@@ -12,7 +12,7 @@ using namespace std::chrono;
 
 using namespace std;
 
-Timestamp::Timestamp() : currentTimepoint_(0ns) {
+Timestamp::Timestamp() : currentTimepoint_(system_clock::now()) {
 }
 
 Timestamp::Timestamp(int64_t nanoSecondsSinceEpoch) : currentTimepoint_(nanoseconds (nanoSecondsSinceEpoch)) {
