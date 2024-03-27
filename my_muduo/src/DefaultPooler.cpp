@@ -1,14 +1,14 @@
 //
 // Created by Administrator on 2024-03-25.
 //
-#include "Pooler.h"
-
+#include "Poller.h"
+#include "EpollPoller.h"
 #include <stdlib.h>
 
-Pooler* Pooler::newDefaultPooler(EventLoop *loop){
-    if(::getenv("MUDUO_USE_POLL")){
+Poller *Poller::newDefaultPooler(EventLoop *loop) {
+    if (::getenv("MUDUO_USE_POLL")) {
         return nullptr;
-    }else{
-        return nullptr;
+    } else {
+        return new EpollPoller(loop);
     };
 }

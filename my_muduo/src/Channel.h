@@ -27,19 +27,19 @@ public:
     void handleEvent(Timestamp receiveTime);
 
     //设置回调函数
-    void setReadCallback(ReadEventCallback& cb){
+    void setReadCallback(ReadEventCallback cb){
         readCallback_ = std::move(cb);
         update();
     }
-    void setWriteCallback(EventCallback& cb){
+    void setWriteCallback(const EventCallback& cb){
         writeCallback_ = std::move(cb);
         update();
     }
-    void setCloseCallback(EventCallback& cb){
+    void setCloseCallback(const EventCallback& cb){
         closeCallback_ = std::move(cb);
         update();
     }
-    void setErrorCallback(EventCallback& cb){
+    void setErrorCallback(const EventCallback& cb){
         errorCallback_ = std::move(cb);
         update();
     }

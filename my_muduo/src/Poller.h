@@ -2,8 +2,8 @@
 // Created by Administrator on 2024-03-25.
 //
 
-#ifndef MY_MUDUO_POOLER_H
-#define MY_MUDUO_POOLER_H
+#ifndef MY_MUDUO_POLLER_H
+#define MY_MUDUO_POLLER_H
 
 
 #include <vector>
@@ -17,13 +17,13 @@ class Channel;
 class EventLoop;
 
 //muduo库中多路事件分发器的核心IO复用模块
-class Pooler : noncopyable {
+class Poller : noncopyable {
 public:
     using ChannelList = std::vector<Channel *>;
 
-    Pooler(EventLoop *loop);
+    Poller(EventLoop *loop);
 
-    virtual ~Pooler();
+    virtual ~Poller();
 
     virtual Timestamp poll(int timeoutMs, ChannelList *activeChannels) = 0;
 
@@ -35,7 +35,7 @@ public:
     bool hasChannel(Channel *pChannel) const;
 
     //EventLoop可以通过该接口获取默认的IO复用的具体实现
-    static Pooler* newDefaultPooler(EventLoop *loop);
+    static Poller* newDefaultPooler(EventLoop *loop);
 protected:
     //map的key: socketfd value: socketfd所属的channel通道类型
     using ChannelMap = std::unordered_map<int, Channel *>;
@@ -46,4 +46,4 @@ private:
 };
 
 
-#endif //MY_MUDUO_POOLER_H
+#endif //MY_MUDUO_POLLER_H

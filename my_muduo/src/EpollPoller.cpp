@@ -13,7 +13,7 @@ const int kDeleted = 2; //channel从poller删除
 
 
 EpollPoller::EpollPoller(EventLoop *loop)
-        : Pooler(loop),
+        : Poller(loop),
           epollfd_(epoll_create1(EPOLL_CLOEXEC)),
           events_(kInitEventListSize){
     if(epollfd_ < 0){
@@ -22,7 +22,7 @@ EpollPoller::EpollPoller(EventLoop *loop)
     }
 }
 
-//channel update remove => EventLoop updateChannel removeChannel => Pooler(EpollPoller) updatechannel removeChannel
+//channel update remove => EventLoop updateChannel removeChannel => Poller(EpollPoller) updatechannel removeChannel
 void EpollPoller::updateChannel(Channel *pChannel) {
     const int index = pChannel->index();
     Logger::getLogger()->info("fd={},events={},index={}",pChannel->fd(),pChannel->events(),index);
@@ -53,7 +53,7 @@ void EpollPoller::removeChannel(Channel *channel) {
     channel->set_index(kNew);
 }
 
-Timestamp EpollPoller::poll(int timeoutMs, Pooler::ChannelList *activeChannels) {
+Timestamp EpollPoller::poll(int timeoutMs, Poller::ChannelList *activeChannels) {
     Logger::getLogger()->info("fd totla count:{}",channels_.size());
     int numEvents = ::epoll_wait(epollfd_, &*events_.begin(),static_cast<int>(events_.size()),timeoutMs);
     int saveErrno = errno;
@@ -82,8 +82,12 @@ EpollPoller::~EpollPoller() {
     close(epollfd_);
 }
 
-void EpollPoller::fillActiveChannels(int numEvents, Pooler::ChannelList *activeChannels) const {
-
+void EpollPoller::fillActiveChannels(int numEvents, Poller::ChannelList *activeChannels) const {
+    for (int i = 0; i < numEvents; i++) {
+        Channel *channel = static_cast<Channel *>(events_[i].data.ptr);
+        channel->set_revents(events_[i].events);
+        activeChannels->push_back(channel);
+    }
 }
 
 //更新channel通道 epoll_ctl

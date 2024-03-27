@@ -5,7 +5,7 @@
 #ifndef MY_MUDUO_EPOLLPOLLER_H
 #define MY_MUDUO_EPOLLPOLLER_H
 
-#include "Pooler.h"
+#include "Poller.h"
 
 #include <vector>
 #include <sys/epoll.h>
@@ -16,7 +16,7 @@
  * epoll_ctl  add/mod/del
  * epoll_wait
  */
-class EpollPoller : public Pooler {
+class EpollPoller : public Poller {
 public:
     EpollPoller(EventLoop* loop);
 
