@@ -73,8 +73,6 @@ Timestamp EpollPoller::poll(int timeoutMs, Poller::ChannelList *activeChannels) 
             Logger::getLogger()->error("EPoller:poll()");
         }
     }
-
-
     return Timestamp();
 }
 

@@ -6,19 +6,19 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sstream>
+#include <memory>
 
 #include "Logger.h"
 #include "Poller.h"
 #include "EventLoop.h"
 #include "Channel.h"
 
-//·ÀÖ¹Ò»¸öÏß³Ì´´½¨¶à¸öEventLoop
+using namespace std;
+
 __thread EventLoop *t_loopInThisThread = nullptr;
 
-//¶¨ÒåÄ¬ÈÏµÄPoller IO¸´ÓÃ½Ó¿Ú³¬Ê±Ê±¼ä
 const int kPollTimeMs = 10000;
 
-//´´½¨wakeupfd ÓÃÀ´notify»½ÐÑsubReactor³öÀ´ÐÂÀ´µÄchannel
 int createEventfd(){
     int evetfd = ::eventfd(0,EFD_NONBLOCK| EFD_CLOEXEC);
     if(evetfd < 0){
@@ -50,7 +50,7 @@ EventLoop::EventLoop()
         t_loopInThisThread = this;
     }
 
-    //ÉèÖÃwakeupfdÊÂ¼þÀàÐÍÒÔ¼°·¢ÉúÊÂ¼þºó»Øµ÷²Ù×÷
+    //ï¿½ï¿½ï¿½ï¿½wakeupfdï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
     wakeupChannel_->setReadCallback(std::bind(&EventLoop::handleRead,this,std::placeholders::_1));
     wakeupChannel_->enableReading();
 }
@@ -71,18 +71,15 @@ void EventLoop::loop() {
         activeChannels_.clear();
         pollReturnTime_ = poller_->poll(kPollTimeMs, &activeChannels_);
         for(Channel* channel : activeChannels_){
-            //Poller¼àÌýÄÄÐ©channel·¢ÉúÊÂ¼þ£¬È»ºóÉÏ±¨¸øEventLoop,Í¨Öªchannel·¢ÉúÁËÄÄÐ©ÊÂ¼þ
             channel->handleEvent(pollReturnTime_);
         }
-        //Ö´ÐÐµ±Ç°eventloopÊÂ¼þÑ­»·ÐèÒª´¦ÀíµÄ»Øµ÷²Ù×÷
-        /**
-         * IOÏß³Ì mainLoop accept ½ÓÊÕÐÂÓÃ»§Á¬½Ó channel->subloop
-         * mainloop ÊÂÏÈ×¢²áÒ»¸ö»Øµ÷cb (ÐèÒªsubloopÖ´ÐÐ)
-         */
         doPendingFunctors();
     }
 }
 
+/**
+ *
+ */
 void EventLoop::quit() {
     quit_ = true;
     if(!isInLoopThread()){
@@ -91,27 +88,42 @@ void EventLoop::quit() {
 }
 
 void EventLoop::runInLoop(EventLoop::Functor cb) {
-
+    if(isInLoopThread()){
+        cb();
+    }else{
+        queueInLoop(cb);
+    }
 }
 
 void EventLoop::queueInLoop(EventLoop::Functor cb) {
-
+    {
+        std::unique_lock<mutex> lock(mutex_);
+        pendingFunctors_.emplace_back(cb);
+    }
+    if(!isInLoopThread() || callingPendingFunctors_){
+        wakeup();
+    }
 }
 
 void EventLoop::wakeup() {
-
+    int64_t  data = 1;
+    ssize_t n = write(wakeupFd_,&data,sizeof(data));
+    if(n != sizeof data){
+        Logger::getLogger()->critical("write wakeupFd error");
+        exit(-1);
+    }
 }
 
 void EventLoop::updateChannel(Channel *channel) {
-
+    poller_->updateChannel(channel);
 }
 
 void EventLoop::removeChannel(Channel *channel) {
-
+    poller_->removeChannel(channel);
 }
 
 bool EventLoop::hasChannel(Channel *channel) {
-    return false;
+    return poller_->hasChannel(channel);
 }
 
 void EventLoop::handleRead(Timestamp timestamp) {
@@ -123,5 +135,14 @@ void EventLoop::handleRead(Timestamp timestamp) {
 }
 
 void EventLoop::doPendingFunctors() {
-
+    std::vector<Functor> functors;
+    callingPendingFunctors_.store(true);
+    {
+        unique_lock<mutex> lock(mutex_);
+        functors.swap(pendingFunctors_);
+    }
+    for(const auto& functor : functors){
+        functor();
+    }
+    callingPendingFunctors_.store(false);
 }
