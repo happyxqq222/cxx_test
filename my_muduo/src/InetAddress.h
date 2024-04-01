@@ -20,6 +20,7 @@ public:
             typename  = std::enable_if_t<std::is_convertible_v<T,std::string>,std::void_t<>>
             >
     explicit InetAddress(uint16_t port, T&& ip);
+    InetAddress() = default;
 
     std::string toIp() const;
     std::string toIpPort() const;

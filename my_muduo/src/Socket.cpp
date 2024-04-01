@@ -10,6 +10,7 @@
 #include <sys/socket.h>
 #include <strings.h>
 #include <sys/types.h>
+#include <netinet/tcp.h>
 
 Socket::~Socket() {
     close(sockfd_);

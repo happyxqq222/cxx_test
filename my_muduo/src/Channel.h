@@ -27,7 +27,7 @@ public:
     void handleEvent(Timestamp receiveTime);
 
     //设置回调函数
-    void setReadCallback(ReadEventCallback cb){
+    void setReadCallback(const ReadEventCallback& cb){
         readCallback_ = std::move(cb);
         update();
     }

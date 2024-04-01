@@ -50,7 +50,6 @@ EventLoop::EventLoop()
         t_loopInThisThread = this;
     }
 
-    //����wakeupfd�¼������Լ������¼���ص�����
     wakeupChannel_->setReadCallback(std::bind(&EventLoop::handleRead,this,std::placeholders::_1));
     wakeupChannel_->enableReading();
 }
