@@ -2,19 +2,19 @@
 // Created by Administrator on 2024-04-04.
 //
 
-#ifndef CHAT_SERVER_CPREPARESTATEMENT_H
-#define CHAT_SERVER_CPREPARESTATEMENT_H
+#ifndef CHAT_SERVER_PREPARESTATEMENT_H
+#define CHAT_SERVER_PREPARESTATEMENT_H
 
 #include <mysql/mysql.h>
 #include <string>
 #include <string_view>
 
 //插入数据用
-class CPrepareStatement{
+class PrepareStatement{
 public:
-    CPrepareStatement();
-    virtual ~CPrepareStatement();
-    bool init(MYSQL* mysql, std::string& sql);
+    PrepareStatement();
+    virtual ~PrepareStatement();
+    bool init(MYSQL* mysql, std::string_view sql);
 
     void setParam(uint32_t index, int& value);
     void setParam(uint32_t index, uint32_t& value);
@@ -31,4 +31,4 @@ private:
 };
 
 
-#endif //CHAT_SERVER_CPREPARESTATEMENT_H
+#endif //CHAT_SERVER_PREPARESTATEMENT_H

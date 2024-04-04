@@ -2,12 +2,12 @@
 // Created by Administrator on 2024-04-04.
 //
 
-#include "CResultSet.h"
+#include "ResultSet.h"
 
 
 using namespace std;
 
-CResultSet::CResultSet(MYSQL_RES *res) : mRes(res) {
+ResultSet::ResultSet(MYSQL_RES *res) : mRes(res) {
     int fieldNum = mysql_num_fields(mRes);
     MYSQL_FIELD *fields = mysql_fetch_field(mRes);
     for (int i = 0; i < fieldNum; i++) {
@@ -15,14 +15,34 @@ CResultSet::CResultSet(MYSQL_RES *res) : mRes(res) {
     }
 }
 
-CResultSet::~CResultSet() {
+ResultSet::ResultSet(ResultSet &&other)
+        : mRes(other.mRes),
+          mRow(other.mRow),
+          mKeyMap(std::move(other.mKeyMap)) {
+    other.mRes = nullptr;
+    other.mRow = nullptr;
+}
+
+ResultSet &ResultSet::operator=(ResultSet &&other) {
+    if(this == &other){
+        return *this;
+    }
+    this->mRes = other.mRes;
+    this->mRow = other.mRow;
+    this->mKeyMap = std::move(other.mKeyMap);
+    other.mRes = nullptr;
+    other.mRow = nullptr;
+    return *this;
+}
+
+ResultSet::~ResultSet() {
     if(mRes){
         mysql_free_result(mRes);
         mRes = nullptr;
     }
 }
 
-bool CResultSet::next() {
+bool ResultSet::next() {
     mRow = mysql_fetch_row(mRes);
     if(mRow){
         return true;
@@ -30,7 +50,7 @@ bool CResultSet::next() {
     return false;
 }
 
-int CResultSet::getIndex(const string& key) {
+int ResultSet::getIndex(const string& key) {
     auto it = mKeyMap.find(key);
     if(it == mKeyMap.end()){
         return -1;
@@ -39,7 +59,7 @@ int CResultSet::getIndex(const string& key) {
     }
 }
 
-int CResultSet::getInt(const std::string& key){
+int ResultSet::getInt(const std::string& key){
     int idx = getIndex(key);
     if(idx == -1){
         return 0;
@@ -48,7 +68,7 @@ int CResultSet::getInt(const std::string& key){
     }
 }
 
-string CResultSet::getString(const std::string& key) {
+string ResultSet::getString(const std::string& key) {
     int idx = getIndex(key);
     if(idx == -1){
         return string();
