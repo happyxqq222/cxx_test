@@ -1,32 +1,47 @@
-#include <iostream>
-#include "ChatServer.h"
-#include "mysql_conn_pool/DBPool.h"
-#include "mysql_conn_pool/DBConn.h"
 
+#include "ChatServer.h"
+#include "mysql_conn_pool/DBConnectionPool.h"
+#include "mysql_conn_pool/DBConnection.h"
+#include "include/Singleton.h"
+#include "include/ArrayBlockQueue.h"
+
+#include <vector>
+#include <iostream>
 using namespace std;
+
+mutex m;
+vector<thread> v;
+
+
+class Logic_System : public Singleton<Logic_System>
+{
+    friend class Singleton<Logic_System>;
+public:
+    ~Logic_System(){};
+private:
+    Logic_System() = default;
+};
 
 int main()
 {
-    DBPool dbPool("mypool","127.0.0.1",3306,"root","root","chat",16);
-    for(int i =0; i < 1000;i++){
-        thread t([&,i]{
-            shared_ptr<DBConn> conn = dbPool.getDbConn(0);
-            optional<ResultSet> resultSet = conn->executeQuery("select * from user");
-            if (resultSet) {
-                cout << "---------------------------------" << to_string(i) << "----------start" << endl;
-                while (resultSet->next()) {
-                    cout << resultSet->getString("name") << "," << resultSet->getString("password") << endl;
-                }
-                cout << "---------------------------------" << to_string(i) << "----------end" << endl;
-            }
-            this_thread::sleep_for(chrono::milliseconds(10));
-        });
-        t.detach();
-    }
-    this_thread::sleep_for(2s);
-    cout << dbPool.getDbConnectionCount() << endl;
-    this_thread::sleep_for(15s);
-    cout << dbPool.getDbConnectionCount() << endl;
+    ArrayBlockQueue<int> blockQueue(10);
+    std::thread producer([&](){
+        for (int i = 0; i < 5; ++i) {
+            blockQueue.send(i);
+            std::cout << "Sent: " << i << std::endl;
+        }
+        this_thread::sleep_for(5s);
+        blockQueue.close();
+    });
+    std::thread consumer([&](){
+        std::this_thread::sleep_for(500ms); // 故意延迟消费者开始消费
+        int val;
+        while(blockQueue.receive(val)){
+            std::cout << "Received: " << val << std::endl;
+        }
+    });
+    producer.join();
+    consumer.join();
 
     return 0;
 }

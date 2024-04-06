@@ -2,8 +2,8 @@
 // Created by Administrator on 2024-04-04.
 //
 
-#ifndef CHAT_SERVER_DBCONN_H
-#define CHAT_SERVER_DBCONN_H
+#ifndef CHAT_SERVER_DBCONNECTION_H
+#define CHAT_SERVER_DBCONNECTION_H
 
 #include <mysql/mysql.h>
 #include <string_view>
@@ -16,14 +16,17 @@
 #define MAX_ESCPE_STRING_LEN 10240
 
 
-class DBPool;
+class DBConnectionPool;
 
-class DBConn {
+class DBConnection {
 
 public:
-    DBConn(DBPool*);
+    DBConnection(DBConnectionPool*);
 
-    virtual ~DBConn();
+    DBConnection(DBConnection&& DBConnection);
+
+    bool connect();
+
 
     bool executeCreate(std::string_view sqlQuery);
 
@@ -59,21 +62,20 @@ public:
         mAliveTime = std::chrono::steady_clock::now();
     };
 
+    virtual ~DBConnection();
+
     //返回存活时间
     uint64_t getAliveTime() const{
        std::chrono::seconds d =  std::chrono::duration_cast<std::chrono::seconds>(std::chrono::steady_clock::now()-mAliveTime);
        return d.count();
     }
 
-    friend DBPool;
+    friend DBConnectionPool;
 private:
-    bool connect();
-
-    DBPool* mDBpool;
+    DBConnectionPool* mDBpool;
     MYSQL *mMysql;
     std::chrono::steady_clock::time_point mAliveTime;
-    char mEscapeString[MAX_ESCPE_STRING_LEN + 1];
 };
 
 
-#endif //CHAT_SERVER_DBCONN_H
+#endif //CHAT_SERVER_DBCONNECTION_H
