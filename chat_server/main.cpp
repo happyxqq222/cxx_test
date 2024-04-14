@@ -4,6 +4,7 @@
 #include "mysql_conn_pool/DBConnection.h"
 #include "include/Singleton.h"
 #include "include/ArrayBlockQueue.h"
+#include "include/RingBuffer.h"
 
 #include <vector>
 #include <iostream>
@@ -22,26 +23,45 @@ private:
     Logic_System() = default;
 };
 
+class A1
+{
+public:
+    A1(int x,int y):_x(x),_y(y){}
+    friend ostream& operator<<(ostream& out, A1& a1){
+        cout << a1._x ;
+        return out;
+    }
+private:
+    int _x,_y;
+};
+
 int main()
 {
-    ArrayBlockQueue<int> blockQueue(10);
-    std::thread producer([&](){
-        for (int i = 0; i < 5; ++i) {
-            blockQueue.send(i);
-            std::cout << "Sent: " << i << std::endl;
-        }
-        this_thread::sleep_for(5s);
-        blockQueue.close();
-    });
-    std::thread consumer([&](){
-        std::this_thread::sleep_for(500ms); // 故意延迟消费者开始消费
-        int val;
-        while(blockQueue.receive(val)){
-            std::cout << "Received: " << val << std::endl;
+    RingBuffer<A1,50000> ringBuffer;
+    thread t1([&ringBuffer](){
+        for(int i =0;i<10000;i++){
+            ringBuffer.emplace_back(i,0);
+            this_thread::sleep_for(100ms);
         }
     });
-    producer.join();
-    consumer.join();
-
+    thread t2([&ringBuffer](){
+        while(true){
+            auto res = ringBuffer.pop_back();
+            if(res != nullptr){
+                cout << *res << endl;
+            }
+        }
+    });
+    thread t3([&ringBuffer](){
+        while(true){
+            auto res = ringBuffer.pop_back();
+            if(res != nullptr){
+                cout << *res << endl;
+            }
+        }
+    });
+    t1.join();
+    t2.join();
+    t3.join();
     return 0;
 }
