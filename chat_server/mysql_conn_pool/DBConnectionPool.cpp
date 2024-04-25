@@ -50,7 +50,6 @@ DBConnectionPool::~DBConnectionPool() {
 std::shared_ptr<DBConnection> DBConnectionPool::getDbConn() {
     unique_lock<mutex> lock(_mutex);
     if (_abortRequest) {
-        printf("have aboort\n");
         return nullptr;
     }
     if (_freeList.empty()) {
@@ -86,26 +85,21 @@ std::shared_ptr<DBConnection> DBConnectionPool::getDbConn() {
 
 void DBConnectionPool::releaseConn(DBConnection *dbConn) {
     if (!dbConn) {
-        printf("dbConn is null\n");
         return;
     }
     unique_lock<mutex> lock(_mutex);
     dbConn->refreshAliveTime();
     _freeList.push_back(dbConn);
     _condVar.notify_all();
-    cout << "release conn" << endl;
-
 }
 
 void DBConnectionPool::scannerConnectionTask() {
     while (!_abortRequest) {
         if (_abortRequest) {
-            cout << "我被唤醒了!" << endl;
             break;
         }
         //扫描整个队列，释放多余连接
         unique_lock<mutex> lock(_mutex);
-        cout << "start  scanner" << endl;
         while (_freeList.size() > _initSize) {
             DBConnection *p = _freeList.front();
             if (p->getAliveTime() >= _maxIdleTime) {
@@ -116,6 +110,5 @@ void DBConnectionPool::scannerConnectionTask() {
                 break;
             }
         }
-        cout << "end scanner" << endl;
     }
 }

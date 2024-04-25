@@ -4,6 +4,8 @@ project(chat_server)
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(jsoncpp REQUIRED)
+find_package(Boost 1.84.0 REQUIRED COMPONENTS system timer filesystem coroutine)
+
 
 set(EXECUTABLE_OUTPUT_PATH  ${PROJECT_SOURCE_DIR}/bin)
 
@@ -18,4 +20,4 @@ message(STATUS "-----------------")
 message(STATUS ${srcs})
 message(STATUS "-----------------")
 add_executable(chat_server ${srcs})
-target_link_libraries(chat_server PRIVATE muduo_net muduo_base pthread jsoncpp mysql_conn_pool thread_pool)
+target_link_libraries(chat_server PRIVATE muduo_net muduo_base pthread jsoncpp mysql_conn_pool thread_pool ${Boost_LIBRARIES})
