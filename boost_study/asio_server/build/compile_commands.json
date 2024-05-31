@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/xqq/code/github/cxx_test/boost_study/asio_server/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/test1.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/asio_server/main.cpp",
+  "file": "/home/xqq/code/github/cxx_test/boost_study/asio_server/main.cpp",
+  "output": "CMakeFiles/test1.dir/main.cpp.o"
+}
+]

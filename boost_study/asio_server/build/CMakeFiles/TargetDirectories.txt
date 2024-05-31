@@ -1,0 +1,3 @@
+/home/xqq/code/github/cxx_test/boost_study/asio_server/build/CMakeFiles/test1.dir
+/home/xqq/code/github/cxx_test/boost_study/asio_server/build/CMakeFiles/edit_cache.dir
+/home/xqq/code/github/cxx_test/boost_study/asio_server/build/CMakeFiles/rebuild_cache.dir
