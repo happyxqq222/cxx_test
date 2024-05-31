@@ -1,0 +1,3 @@
+/home/xqq/code/MyClient/build/CMakeFiles/Client.dir
+/home/xqq/code/MyClient/build/CMakeFiles/edit_cache.dir
+/home/xqq/code/MyClient/build/CMakeFiles/rebuild_cache.dir

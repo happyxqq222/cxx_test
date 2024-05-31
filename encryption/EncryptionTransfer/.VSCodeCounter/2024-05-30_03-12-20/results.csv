@@ -1,0 +1,4 @@
+"filename", "language", "Json", "Protocol Buffers", "comment", "blank", "total"
+"/home/xqq/code/EncryptionTransfer/bin/server.json", "Json", 4, 0, 0, 0, 4
+"/home/xqq/code/EncryptionTransfer/src/proto/Message.proto", "Protocol Buffers", 0, 24, 0, 4, 28
+"Total", "-", 4, 24, 0, 4, 32

@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+message RequestMsg {
+  int32 cmdType = 1;
+  bytes clientID = 2;
+  int32 timestamp = 3;
+  bytes serverID = 4;
+  bytes sign = 5;
+  bytes data = 6;
+}
+
+message ResponseMsg {
+  int32 cmdType = 1;
+  bool status = 2;
+  int32 secKeyId = 3;
+  bytes clientID = 4;
+  int32 timestamp = 5;
+  bytes serverID = 6;
+  bytes data = 7;
+}
+
+message PingReq {
+  int32 secondsSinceEpoch  = 1;
+}
+
+message PingResp {
+  int32 secondsSinceEpoch = 1;
+}

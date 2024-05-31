@@ -1,0 +1,22 @@
+# ninja log v5
+1497	2186	1717009110423583207	CMakeFiles/Client.dir/src/tool/Types.cc.o	39dffc234734fd3d
+652	942	1717055779130384662	bin/Client	f7a130daf047d326
+6	509	1717009108739609609	CMakeFiles/Client.dir/src/memory_pool/MemoryPool.cpp.o	cf718b5a323f7b5b
+3	1865	1717053398524419796	CMakeFiles/Client.dir/src/biz/ClientOp.cc.o	9833ab46871ed871
+5	512	1717050505241254188	CMakeFiles/Client.dir/src/tool/RSAUtils.cc.o	a7205aaf601e5ea6
+2	1497	1717009109731594066	CMakeFiles/Client.dir/src/codec/RequestCodec.cpp.o	ea15d8b0ead08837
+6	1967	1717009110199586725	CMakeFiles/Client.dir/src/net/ConnectionInOut.cc.o	19d4bdd488f4fb64
+1	1946	1717009110171587165	CMakeFiles/Client.dir/src/codec/Message.pb.cc.o	ec976641faeca548
+5	1447	1717009109683594820	CMakeFiles/Client.dir/src/codec/ResponseCodec.cpp.o	b832a7b7e593d120
+3	1333	1717055623003238822	CMakeFiles/Client.dir/src/handler/MessageHandler.cc.o	b2c47e1c7ff64023
+4	2000	1717009110231586222	CMakeFiles/Client.dir/src/codec/RequestFactory.cpp.o	43e395900f3fcaa0
+509	2139	1717009110371584024	CMakeFiles/Client.dir/src/tool/NetUtils.cc.o	a63f051667f62092
+1644	2223	1717009110459582641	CMakeFiles/Client.dir/src/tool/base64.cpp.o	41ece8f4d4167983
+3	1686	1717053398344425398	CMakeFiles/Client.dir/src/main.cpp.o	39936aa0b1254aa3
+4	1424	1717050506149182220	CMakeFiles/Client.dir/src/handler/MessageDecode.cc.o	65c64ab9b8a34129
+3	2093	1717053398752412700	CMakeFiles/Client.dir/src/net/Client.cc.o	fedcd2505dd3c7bc
+0	328	1717009108563612363	CMakeFiles/Client.dir/src/codec/Codec.cpp.o	a3753d7b3e3ea202
+1	484	1717009108715609984	CMakeFiles/Client.dir/src/codec/CodecFactory.cpp.o	3172a1942e70adae
+4	652	1717055778846393503	CMakeFiles/Client.dir/src/tool/AESUtils.cc.o	31c28b2ae27f4209
+329	2410	1717009110643579752	CMakeFiles/Client.dir/src/net/UserUtil.cc.o	487cf6527601aba0
+4	2005	1717009110231586222	CMakeFiles/Client.dir/src/codec/RespondFactory.cpp.o	914ff3f7ae5b068

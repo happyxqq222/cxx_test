@@ -1,0 +1,17 @@
+"filename", "language", "cmake", "CMake Cache", "Json", "comment", "blank", "total"
+"/home/xqq/code/EncryptionTransfer/bin/server.json", "Json", 0, 0, 4, 0, 0, 4
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/query/client-vscode/query.json", "Json", 0, 0, 1, 0, 0, 1
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/cache-v2-857ef4940887d6e065db.json", "Json", 0, 0, 1943, 0, 1, 1944
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/cmakeFiles-v1-09f37980e6ff1c24edf6.json", "Json", 0, 0, 492, 0, 1, 493
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/codemodel-v2-b6c3e180cecde3c75857.json", "Json", 0, 0, 60, 0, 1, 61
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json", "Json", 0, 0, 14, 0, 1, 15
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/index-2024-05-29T15-37-42-0168.json", "Json", 0, 0, 132, 0, 1, 133
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/target-EncryptionTransfer-Debug-1a414e38d0cee7e5c746.json", "Json", 0, 0, 465, 0, 1, 466
+"/home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/toolchains-v1-8f001b8fbe957a6b9d5a.json", "Json", 0, 0, 110, 0, 1, 111
+"/home/xqq/code/EncryptionTransfer/build/CMakeCache.txt", "CMake Cache", 0, 433, 0, 0, 96, 529
+"/home/xqq/code/EncryptionTransfer/build/CMakeFiles/3.29.3/CMakeCCompiler.cmake", "cmake", 63, 0, 0, 0, 18, 81
+"/home/xqq/code/EncryptionTransfer/build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake", "cmake", 73, 0, 0, 0, 20, 93
+"/home/xqq/code/EncryptionTransfer/build/CMakeFiles/3.29.3/CMakeSystem.cmake", "cmake", 10, 0, 0, 0, 6, 16
+"/home/xqq/code/EncryptionTransfer/build/cmake_install.cmake", "cmake", 46, 0, 0, 0, 9, 55
+"/home/xqq/code/EncryptionTransfer/build/compile_commands.json", "Json", 0, 0, 110, 0, 0, 110
+"Total", "-", 192, 433, 3331, 0, 156, 4112

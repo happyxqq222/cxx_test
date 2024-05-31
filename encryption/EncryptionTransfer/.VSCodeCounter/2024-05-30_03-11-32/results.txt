@@ -1,0 +1,56 @@
+Date : 2024-05-30 03:11:32
+Directory : /home/xqq/code/EncryptionTransfer
+Total : 16 files,  3980 codes, 0 comments, 160 blanks, all 4140 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| Json             |         10 |      3,331 |          0 |          7 |      3,338 |
+| CMake Cache      |          1 |        433 |          0 |         96 |        529 |
+| cmake            |          4 |        192 |          0 |         53 |        245 |
+| Protocol Buffers |          1 |         24 |          0 |          4 |         28 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                  | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                     |         16 |      3,980 |          0 |        160 |      4,140 |
+| bin                                                                                                                   |          1 |          4 |          0 |          0 |          4 |
+| build                                                                                                                 |         14 |      3,952 |          0 |        156 |      4,108 |
+| build (Files)                                                                                                         |          3 |        589 |          0 |        105 |        694 |
+| build/.cmake                                                                                                          |          8 |      3,217 |          0 |          7 |      3,224 |
+| build/.cmake/api                                                                                                      |          8 |      3,217 |          0 |          7 |      3,224 |
+| build/.cmake/api/v1                                                                                                   |          8 |      3,217 |          0 |          7 |      3,224 |
+| build/.cmake/api/v1/query                                                                                             |          1 |          1 |          0 |          0 |          1 |
+| build/.cmake/api/v1/query/client-vscode                                                                               |          1 |          1 |          0 |          0 |          1 |
+| build/.cmake/api/v1/reply                                                                                             |          7 |      3,216 |          0 |          7 |      3,223 |
+| build/CMakeFiles                                                                                                      |          3 |        146 |          0 |         44 |        190 |
+| build/CMakeFiles/3.29.3                                                                                               |          3 |        146 |          0 |         44 |        190 |
+| src                                                                                                                   |          1 |         24 |          0 |          4 |         28 |
+| src/proto                                                                                                             |          1 |         24 |          0 |          4 |         28 |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                                              | language         | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| /home/xqq/code/EncryptionTransfer/bin/server.json                                                                     | Json             |          4 |          0 |          0 |          4 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/query/client-vscode/query.json                                  | Json             |          1 |          0 |          0 |          1 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/cache-v2-857ef4940887d6e065db.json                        | Json             |      1,943 |          0 |          1 |      1,944 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/cmakeFiles-v1-09f37980e6ff1c24edf6.json                   | Json             |        492 |          0 |          1 |        493 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/codemodel-v2-b6c3e180cecde3c75857.json                    | Json             |         60 |          0 |          1 |         61 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json               | Json             |         14 |          0 |          1 |         15 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/index-2024-05-29T15-37-42-0168.json                       | Json             |        132 |          0 |          1 |        133 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/target-EncryptionTransfer-Debug-1a414e38d0cee7e5c746.json | Json             |        465 |          0 |          1 |        466 |
+| /home/xqq/code/EncryptionTransfer/build/.cmake/api/v1/reply/toolchains-v1-8f001b8fbe957a6b9d5a.json                   | Json             |        110 |          0 |          1 |        111 |
+| /home/xqq/code/EncryptionTransfer/build/CMakeCache.txt                                                                | CMake Cache      |        433 |          0 |         96 |        529 |
+| /home/xqq/code/EncryptionTransfer/build/CMakeFiles/3.29.3/CMakeCCompiler.cmake                                        | cmake            |         63 |          0 |         18 |         81 |
+| /home/xqq/code/EncryptionTransfer/build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake                                      | cmake            |         73 |          0 |         20 |         93 |
+| /home/xqq/code/EncryptionTransfer/build/CMakeFiles/3.29.3/CMakeSystem.cmake                                           | cmake            |         10 |          0 |          6 |         16 |
+| /home/xqq/code/EncryptionTransfer/build/cmake_install.cmake                                                           | cmake            |         46 |          0 |          9 |         55 |
+| /home/xqq/code/EncryptionTransfer/build/compile_commands.json                                                         | Json             |        110 |          0 |          0 |        110 |
+| /home/xqq/code/EncryptionTransfer/src/proto/Message.proto                                                             | Protocol Buffers |         24 |          0 |          4 |         28 |
+| Total                                                                                                                 |                  |      3,980 |          0 |        160 |      4,140 |
++-----------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

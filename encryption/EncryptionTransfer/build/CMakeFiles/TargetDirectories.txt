@@ -1,0 +1,3 @@
+/home/xqq/code/EncryptionTransfer/build/CMakeFiles/EncryptionTransfer.dir
+/home/xqq/code/EncryptionTransfer/build/CMakeFiles/edit_cache.dir
+/home/xqq/code/EncryptionTransfer/build/CMakeFiles/rebuild_cache.dir
