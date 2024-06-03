@@ -1,0 +1,8 @@
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/CMakeFiles/edit_cache.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/server/CMakeFiles/server.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/server/CMakeFiles/edit_cache.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/server/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/client/CMakeFiles/client.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/client/CMakeFiles/edit_cache.dir
+/tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host/client/CMakeFiles/rebuild_cache.dir

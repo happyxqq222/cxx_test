@@ -1,0 +1,3 @@
+D:/code/cxx_test/boost_study/test111/cmake-build-debug-mingw/CMakeFiles/test111.dir
+D:/code/cxx_test/boost_study/test111/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/code/cxx_test/boost_study/test111/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+# ninja log v5
+1	504	1717304892680226783	client/CMakeFiles/client.dir/ByteBuffer.cc.o	d56dc3846292a3ed
+1	3329	1717304895504190094	client/CMakeFiles/client.dir/main.cpp.o	3dcddc3708ac4538
+3330	3437	1717304895600188849	/tmp/tmp.39yl3lUyc7/bin/client	55224b9a9d583354

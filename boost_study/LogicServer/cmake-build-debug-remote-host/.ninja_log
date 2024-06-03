@@ -1,0 +1,6 @@
+# ninja log v5
+0	30	1717326531136170617	build.ninja	3e8d8a26067cb1d7
+0	246	1717326507147904722	client/CMakeFiles/client.dir/main.cpp.o	9c810033ff90aaa4
+0	371	1717326507271906190	common/CMakeFiles/common.dir/ByteBuffer.cc.o	e73c06e7728ee321
+371	426	1717326507327906852	common/libcommon.so	8b6b7bad940eecf
+426	488	1717326507387907562	client/client	8e733f8458e2e060

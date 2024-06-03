@@ -1,0 +1,4 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G Ninja -S /tmp/tmp.39yl3lUyc7 -B /tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/tmp.39yl3lUyc7/cmake-build-debug-remote-host
