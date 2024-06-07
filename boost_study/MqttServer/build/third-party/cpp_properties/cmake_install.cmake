@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:boost_study/MqttServer/build/third-party/cpp_properties/cmake_install.cmake
 # Install script for directory: /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties
+========
+# Install script for directory: /tmp/tmp.SMBWUktNDy
+>>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/cmake_install.cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -48,3 +52,10 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
 endif()
 
+<<<<<<<< HEAD:boost_study/MqttServer/build/third-party/cpp_properties/cmake_install.cmake
+========
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+>>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/cmake_install.cmake
