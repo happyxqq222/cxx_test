@@ -2,29 +2,40 @@ cmake_minimum_required(VERSION 3.28)
 project(MqttServer)
 
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+
 
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose Release or Debug" FORCE)
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g")
 endif ()
+
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    message(STATUS "Build type: Debug")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
+    message(STATUS "Build type: Release")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+elseif(CMAKE_BUILD_TYPE STREQUAL "RelWithDebInfo")
+    message(STATUS "Build type: RelWithDebInfo")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g")
+elseif(CMAKE_BUILD_TYPE STREQUAL "MinSizeRel")
+    message(STATUS "Build type: MinSizeRel")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Os")
+else()
+    message(STATUS "Build type: Default to Release with debug information")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g")
+endif()
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/lib)
-find_package(Boost 1.85.0 REQUIRED)
+find_package(Boost 1.85.0 REQUIRED COMPONENTS stacktrace_addr2line)
 find_package(yaml-cpp REQUIRED)
 add_subdirectory(third-party/spdlog)
 add_subdirectory(third-party/jsoncpp)
 add_subdirectory(third-party/cpp_properties)
 include(FetchContent)
-add_compile_options(-Wno-error=unused-parameter)
-#[[FetchContent_Declare(
-        yaml-cpp
-        GIT_REPOSITORY https://github.com/jbeder/yaml-cpp.git
-        GIT_TAGS master
-)
-if (NOT yaml-cpp_POPULATED)
-    message(STATUS "Fetching yaml-cpp...")
-    FetchContent_MakeAvailable(yaml-cpp)
-    add_subdirectory(${yaml-cpp_SOURCE_DIR} ${yaml-cpp_BINARY_DIR})
-endif ()]]
+
 
 file(GLOB_RECURSE srcs ${PROJECT_SOURCE_DIR}/src/*.cpp)
 file(GLOB_RECURSE hrds ${PROJECT_SOURCE_DIR}/src/*.h)

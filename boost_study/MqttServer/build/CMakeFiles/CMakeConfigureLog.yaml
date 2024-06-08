@@ -28,11 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
         /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/3.28.5/CompilerIdC/a.out
-========
-        /tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/3.28.5/CompilerIdC/a.out
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
       
   -
     kind: "message-v1"
@@ -54,11 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
         /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/3.28.5/CompilerIdCXX/a.out
-========
-        /tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/3.28.5/CompilerIdCXX/a.out
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
       
   -
     kind: "try_compile-v1"
@@ -69,13 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-1b9yHU"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-1b9yHU"
-========
-      source: "/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-nQJK0m"
-      binary: "/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-nQJK0m"
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-JVROKX"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-JVROKX"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -84,17 +71,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-1b9yHU'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-JVROKX'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_6b843
-        [1/2] /usr/bin/gcc   -v -o CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c
-========
-        Change Dir: '/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-nQJK0m'
-        
-        Run Build Command(s): /usr/bin/ninja -v cmTC_102be
-        [1/2] /usr/bin/gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1b0ab
+        [1/2] /usr/bin/gcc   -v -o CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/gcc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -104,13 +84,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6b843.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6b843.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccna8Nkm.s
-========
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_102be.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_102be.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjafcev.s
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1b0ab.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1b0ab.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuEDIXM.s
         GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -130,23 +105,13 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6b843.dir/'
-         as -v --64 -o CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o /tmp/ccna8Nkm.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1b0ab.dir/'
+         as -v --64 -o CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o /tmp/ccuEDIXM.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /usr/bin/gcc  -v CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o -o cmTC_6b843   && :
-========
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_102be.dir/'
-         as -v --64 -o CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o /tmp/ccjafcev.s
-        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
-        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /usr/bin/gcc  -v CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o -o cmTC_102be   && :
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/gcc  -v CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o -o cmTC_1b0ab   && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/gcc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -159,15 +124,9 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6b843' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6b843.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEQChDu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6b843 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6b843' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6b843.'
-========
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_102be' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_102be.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJPzccx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_102be /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_102be' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_102be.'
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b0ab' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1b0ab.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdpWa8h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1b0ab /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b0ab' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1b0ab.'
         
       exitCode: 0
   -
@@ -201,17 +160,10 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-1b9yHU']
+        ignore line: [Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-JVROKX']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_6b843]
-        ignore line: [[1/2] /usr/bin/gcc   -v -o CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
-========
-        ignore line: [Change Dir: '/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-nQJK0m']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_102be]
-        ignore line: [[1/2] /usr/bin/gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_1b0ab]
+        ignore line: [[1/2] /usr/bin/gcc   -v -o CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/gcc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -221,13 +173,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6b843.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6b843.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccna8Nkm.s]
-========
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_102be.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_102be.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjafcev.s]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1b0ab.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1b0ab.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuEDIXM.s]
         ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -247,23 +194,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6b843.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o /tmp/ccna8Nkm.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1b0ab.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o /tmp/ccuEDIXM.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /usr/bin/gcc  -v CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o -o cmTC_6b843   && :]
-========
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_102be.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o /tmp/ccjafcev.s]
-        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /usr/bin/gcc  -v CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o -o cmTC_102be   && :]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/gcc  -v CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o -o cmTC_1b0ab   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -276,22 +213,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6b843' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6b843.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEQChDu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6b843 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
-========
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_102be' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_102be.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJPzccx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_102be /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b0ab' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1b0ab.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdpWa8h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1b0ab /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-          arg [-plugin-opt=-fresolution=/tmp/ccEQChDu.res] ==> ignore
-========
-          arg [-plugin-opt=-fresolution=/tmp/ccJPzccx.res] ==> ignore
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+          arg [-plugin-opt=-fresolution=/tmp/ccdpWa8h.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -309,11 +237,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-          arg [cmTC_6b843] ==> ignore
-========
-          arg [cmTC_102be] ==> ignore
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+          arg [cmTC_1b0ab] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -325,11 +249,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-          arg [CMakeFiles/cmTC_6b843.dir/CMakeCCompilerABI.c.o] ==> ignore
-========
-          arg [CMakeFiles/cmTC_102be.dir/CMakeCCompilerABI.c.o] ==> ignore
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+          arg [CMakeFiles/cmTC_1b0ab.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -369,13 +289,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-HZZeFk"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-HZZeFk"
-========
-      source: "/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-FVFXjy"
-      binary: "/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-FVFXjy"
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-6g2Nw6"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-6g2Nw6"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -385,17 +300,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-HZZeFk'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-6g2Nw6'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_87e4d
-        [1/2] /usr/bin/g++   -v -o CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
-========
-        Change Dir: '/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-FVFXjy'
-        
-        Run Build Command(s): /usr/bin/ninja -v cmTC_1bca7
-        [1/2] /usr/bin/g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3d400
+        [1/2] /usr/bin/g++   -v -o CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -405,13 +313,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_87e4d.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_87e4d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccZJ9GSn.s
-========
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1bca7.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1bca7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuuJCM5.s
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d400.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3d400.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccV2nuoc.s
         GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -435,23 +338,13 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_87e4d.dir/'
-         as -v --64 -o CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccZJ9GSn.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d400.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccV2nuoc.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /usr/bin/g++  -v CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_87e4d   && :
-========
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1bca7.dir/'
-         as -v --64 -o CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuuJCM5.s
-        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
-        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /usr/bin/g++  -v CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1bca7   && :
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/g++  -v CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3d400   && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -464,15 +357,9 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_87e4d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_87e4d.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmV2xQV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_87e4d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_87e4d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_87e4d.'
-========
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1bca7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1bca7.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7WSmx3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1bca7 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1bca7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1bca7.'
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d400' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3d400.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLiBFqS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3d400 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d400' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3d400.'
         
       exitCode: 0
   -
@@ -512,17 +399,10 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-HZZeFk']
+        ignore line: [Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-6g2Nw6']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_87e4d]
-        ignore line: [[1/2] /usr/bin/g++   -v -o CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
-========
-        ignore line: [Change Dir: '/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/CMakeScratch/TryCompile-FVFXjy']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_1bca7]
-        ignore line: [[1/2] /usr/bin/g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_3d400]
+        ignore line: [[1/2] /usr/bin/g++   -v -o CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -532,13 +412,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_87e4d.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_87e4d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccZJ9GSn.s]
-========
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1bca7.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1bca7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuuJCM5.s]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d400.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3d400.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccV2nuoc.s]
         ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -562,23 +437,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_87e4d.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccZJ9GSn.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d400.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccV2nuoc.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /usr/bin/g++  -v CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_87e4d   && :]
-========
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1bca7.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuuJCM5.s]
-        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /usr/bin/g++  -v CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1bca7   && :]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/g++  -v CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3d400   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -591,22 +456,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_87e4d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_87e4d.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmV2xQV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_87e4d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
-========
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1bca7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1bca7.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7WSmx3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1bca7 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d400' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3d400.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLiBFqS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3d400 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-          arg [-plugin-opt=-fresolution=/tmp/ccmV2xQV.res] ==> ignore
-========
-          arg [-plugin-opt=-fresolution=/tmp/cc7WSmx3.res] ==> ignore
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+          arg [-plugin-opt=-fresolution=/tmp/ccLiBFqS.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -624,11 +480,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-          arg [cmTC_87e4d] ==> ignore
-========
-          arg [cmTC_1bca7] ==> ignore
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+          arg [cmTC_3d400] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -640,11 +492,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
-          arg [CMakeFiles/cmTC_87e4d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-========
-          arg [CMakeFiles/cmTC_1bca7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
+          arg [CMakeFiles/cmTC_3d400.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -671,7 +519,6 @@ events:
         implicit fwks: []
       
       
-<<<<<<<< HEAD:boost_study/MqttServer/build/CMakeFiles/CMakeConfigureLog.yaml
   -
     kind: "try_compile-v1"
     backtrace:
@@ -683,8 +530,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-re2vEA"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-re2vEA"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-3V9u2I"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-3V9u2I"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -693,11 +540,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-re2vEA'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-3V9u2I'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_5ceba
-        [1/2] /usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5ceba.dir/src.c.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-re2vEA/src.c
-        [2/2] : && /usr/bin/gcc   CMakeFiles/cmTC_5ceba.dir/src.c.o -o cmTC_5ceba   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ca898
+        [1/2] /usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ca898.dir/src.c.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-3V9u2I/src.c
+        [2/2] : && /usr/bin/gcc   CMakeFiles/cmTC_ca898.dir/src.c.o -o cmTC_ca898   && :
         
       exitCode: 0
   -
@@ -708,10 +555,10 @@ events:
     checks:
       - "Looking for C++ include clocale"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-KHKvAn"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-KHKvAn"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ttkXk5"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ttkXk5"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -719,11 +566,11 @@ events:
       variable: "HAVE_CLOCALE"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-KHKvAn'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ttkXk5'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_38b5c
-        [1/2] /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_38b5c.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-KHKvAn/CheckIncludeFile.cxx
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_38b5c.dir/CheckIncludeFile.cxx.o -o cmTC_38b5c   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_74eec
+        [1/2] /usr/bin/g++   -g  -std=c++11 -o CMakeFiles/cmTC_74eec.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ttkXk5/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_74eec.dir/CheckIncludeFile.cxx.o -o cmTC_74eec   && :
         
       exitCode: 0
   -
@@ -735,10 +582,10 @@ events:
     checks:
       - "Looking for localeconv"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-udxNe5"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-udxNe5"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-2ZFmWL"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-2ZFmWL"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -746,11 +593,11 @@ events:
       variable: "HAVE_LOCALECONV"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-udxNe5'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-2ZFmWL'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_6b844
-        [1/2] /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_6b844.dir/CheckSymbolExists.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-udxNe5/CheckSymbolExists.cxx
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_6b844.dir/CheckSymbolExists.cxx.o -o cmTC_6b844   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a2757
+        [1/2] /usr/bin/g++   -g  -std=c++11 -o CMakeFiles/cmTC_a2757.dir/CheckSymbolExists.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-2ZFmWL/CheckSymbolExists.cxx
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_a2757.dir/CheckSymbolExists.cxx.o -o cmTC_a2757   && :
         
       exitCode: 0
   -
@@ -762,10 +609,10 @@ events:
     checks:
       - "Looking for C++ include sys/types.h"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-VcSGnE"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-VcSGnE"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-26uHld"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-26uHld"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -773,11 +620,11 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-VcSGnE'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-26uHld'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_3f097
-        [1/2] /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_3f097.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-VcSGnE/CheckIncludeFile.cxx
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_3f097.dir/CheckIncludeFile.cxx.o -o cmTC_3f097   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6bbf6
+        [1/2] /usr/bin/g++   -g  -std=c++11 -o CMakeFiles/cmTC_6bbf6.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-26uHld/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_6bbf6.dir/CheckIncludeFile.cxx.o -o cmTC_6bbf6   && :
         
       exitCode: 0
   -
@@ -789,10 +636,10 @@ events:
     checks:
       - "Looking for C++ include stdint.h"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-Rpuh2f"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-Rpuh2f"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ed1UqM"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ed1UqM"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -800,11 +647,11 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-Rpuh2f'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ed1UqM'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_01ffa
-        [1/2] /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_01ffa.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-Rpuh2f/CheckIncludeFile.cxx
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_01ffa.dir/CheckIncludeFile.cxx.o -o cmTC_01ffa   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7dfb3
+        [1/2] /usr/bin/g++   -g  -std=c++11 -o CMakeFiles/cmTC_7dfb3.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ed1UqM/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_7dfb3.dir/CheckIncludeFile.cxx.o -o cmTC_7dfb3   && :
         
       exitCode: 0
   -
@@ -816,10 +663,10 @@ events:
     checks:
       - "Looking for C++ include stddef.h"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-PYXTDl"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-PYXTDl"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-xQDjvM"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-xQDjvM"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -827,11 +674,11 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-PYXTDl'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-xQDjvM'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_5a06b
-        [1/2] /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_5a06b.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-PYXTDl/CheckIncludeFile.cxx
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_5a06b.dir/CheckIncludeFile.cxx.o -o cmTC_5a06b   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2f76a
+        [1/2] /usr/bin/g++   -g  -std=c++11 -o CMakeFiles/cmTC_2f76a.dir/CheckIncludeFile.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-xQDjvM/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_2f76a.dir/CheckIncludeFile.cxx.o -o cmTC_2f76a   && :
         
       exitCode: 0
   -
@@ -843,10 +690,10 @@ events:
     checks:
       - "Check size of lconv"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-mFH2gd"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-mFH2gd"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-5ih8yw"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-5ih8yw"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -854,11 +701,11 @@ events:
       variable: "HAVE_LCONV_SIZE"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-mFH2gd'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-5ih8yw'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_1f229
-        [1/2] /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_1f229.dir/LCONV_SIZE.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-mFH2gd/LCONV_SIZE.cpp
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_1f229.dir/LCONV_SIZE.cpp.o -o cmTC_1f229   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ae95d
+        [1/2] /usr/bin/g++   -g  -std=c++11 -o CMakeFiles/cmTC_ae95d.dir/LCONV_SIZE.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-5ih8yw/LCONV_SIZE.cpp
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_ae95d.dir/LCONV_SIZE.cpp.o -o cmTC_ae95d   && :
         
       exitCode: 0
   -
@@ -871,10 +718,10 @@ events:
     checks:
       - "Performing Test HAVE_DECIMAL_POINT"
     directories:
-      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ZDUD4A"
-      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ZDUD4A"
+      source: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-BOkKnO"
+      binary: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-BOkKnO"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS: " -g"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake"
@@ -882,13 +729,11 @@ events:
       variable: "HAVE_DECIMAL_POINT"
       cached: true
       stdout: |
-        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ZDUD4A'
+        Change Dir: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-BOkKnO'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_918ab
-        [1/2] /usr/bin/g++ -DHAVE_DECIMAL_POINT  -std=c++11 -o CMakeFiles/cmTC_918ab.dir/src.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-ZDUD4A/src.cxx
-        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_918ab.dir/src.cxx.o -o cmTC_918ab   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1f396
+        [1/2] /usr/bin/g++ -DHAVE_DECIMAL_POINT  -g  -std=c++11 -o CMakeFiles/cmTC_1f396.dir/src.cxx.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/CMakeFiles/CMakeScratch/TryCompile-BOkKnO/src.cxx
+        [2/2] : && /usr/bin/g++ -g  CMakeFiles/cmTC_1f396.dir/src.cxx.o -o cmTC_1f396   && :
         
       exitCode: 0
-========
->>>>>>>> d547c7a553288ce49db748f72e415572f4acbb09:boost_study/LogicServer/cmake-build-debug-remote-host/CMakeFiles/CMakeConfigureLog.yaml
 ...

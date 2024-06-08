@@ -8,6 +8,7 @@
 #include <boost/asio.hpp>
 #include <boost/asio/ip/basic_endpoint.hpp>
 #include <boost/asio/ssl.hpp>
+#include <cstdint>
 #include <unordered_set>
 
 #include "MqttLogger.h"
@@ -24,8 +25,9 @@ enum class MQTT_MSG_STATE : uint8_t {
     WAIT_RECEIVE_PUBCOMP
 };
 
-enum class MQTT_RC_CODE : uint8_t {
+enum class MQTT_RC_CODE : int32_t {
     ERR_SUCCESS = 0,
+    ERR_PEER_CLOSE,
     ERR_SUCCESS_DISCONNECT,
     ERR_NO_CONN,
     ERR_DUP_CONNECT,
@@ -74,8 +76,20 @@ struct MQTT_CONNACK {
 
 struct mqtt_packet_t {
     struct {
+        /**
+         * 遗嘱qos级别
+         * 00 qos级别为0
+         * 01 qos级别为1
+         * 10 qos级别为2
+         * 11 保留
+         */
         uint8_t qos : 2;
         uint8_t dup : 1;
+        /**
+         * 遗嘱保留标志
+         * 1:遗嘱消息要保留
+         * 0:遗嘱消息不用保留
+         */
         uint8_t retain : 1;
     };
     MQTT_MSG_STATE state;

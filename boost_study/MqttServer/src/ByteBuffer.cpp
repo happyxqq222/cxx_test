@@ -12,10 +12,9 @@
 
 #include <errno.h>
 #include <sys/uio.h>
+#include <cstddef>
 #include "Singleton.h"
 
-using namespace muduo;
-using namespace muduo::net;
 
 const char ByteBuffer::kCRLF[] = "\r\n";
 
@@ -45,7 +44,7 @@ ssize_t ByteBuffer::readFd(int fd, int* savedErrno)
   {
     *savedErrno = errno;
   }
-  else if (implicit_cast<size_t>(n) <= writable)
+  else if (static_cast<size_t>(n) <= writable)
   {
     writerIndex_ += n;
   }

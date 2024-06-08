@@ -11,14 +11,17 @@
 #ifndef MUDUO_NET_BUFFER_H
 #define MUDUO_NET_BUFFER_H
 
-#include "muduo/base/copyable.h"
-#include "muduo/base/StringPiece.h"
-#include "muduo/base/Types.h"
 
-#include "muduo/net/Endian.h"
-
+#include <boost/asio/detail/socket_ops.hpp>
+#include <boost/core/noncopyable.hpp>
+#include <boost/asio.hpp>
+#include <boost/endian/conversion.hpp>
+#include <boost/noncopyable.hpp>
 #include <algorithm>
+#include <cstdint>
+#include <string_view>
 #include <vector>
+#include <boost/endian.hpp>
 
 #include <assert.h>
 #include <string.h>
@@ -34,7 +37,7 @@
 /// |                   |                  |                  |
 /// 0      <=      readerIndex   <=   writerIndex    <=     size
 /// @endcode
-class ByteBuffer : public muduo::copyable
+class ByteBuffer : public boost::noncopyable
 {
  public:
   static const size_t kCheapPrepend = 8;
@@ -164,12 +167,12 @@ class ByteBuffer : public muduo::copyable
     return result;
   }
 
-  muduo::StringPiece toStringPiece() const
+std::string_view toStringView() const
   {
-    return muduo::StringPiece(peek(), static_cast<int>(readableBytes()));
+    return std::string_view(peek(), static_cast<int>(readableBytes()));
   }
 
-  void append(const muduo::StringPiece& str)
+  void append(std::string_view str)
   {
     append(str.data(), str.size());
   }
@@ -219,7 +222,8 @@ class ByteBuffer : public muduo::copyable
   ///
   void appendInt64(int64_t x)
   {
-    int64_t be64 = muduo::net::sockets::hostToNetwork64(x);
+    // int64_t be64 = muduo::net::sockets::hostToNetwork64(x);
+    int64_t be64 =  boost::endian::native_to_big(x);
     append(&be64, sizeof be64);
   }
 
@@ -228,13 +232,15 @@ class ByteBuffer : public muduo::copyable
   ///
   void appendInt32(int32_t x)
   {
-    int32_t be32 = muduo::net::sockets::hostToNetwork32(x);
+    int32_t be32 =  boost::endian::native_to_big(x);
+    // int32_t be32 = muduo::net::sockets::hostToNetwork32(x);
     append(&be32, sizeof be32);
   }
 
   void appendInt16(int16_t x)
   {
-    int16_t be16 = muduo::net::sockets::hostToNetwork16(x);
+    // int16_t be16 = muduo::net::sockets::hostToNetwork16(x);
+    int16_t be16 = boost::endian::native_to_big(x);
     append(&be16, sizeof be16);
   }
 
@@ -288,7 +294,8 @@ class ByteBuffer : public muduo::copyable
     assert(readableBytes() >= sizeof(int64_t));
     int64_t be64 = 0;
     ::memcpy(&be64, peek(), sizeof be64);
-    return muduo::net::sockets::networkToHost64(be64);
+    return boost::endian::big_to_native<int64_t>(be64);
+    // return muduo::net::sockets::networkToHost64(be64);
   }
 
   ///
@@ -300,7 +307,8 @@ class ByteBuffer : public muduo::copyable
     assert(readableBytes() >= sizeof(int32_t));
     int32_t be32 = 0;
     ::memcpy(&be32, peek(), sizeof be32);
-    return muduo::net::sockets::networkToHost32(be32);
+    return boost::endian::big_to_native<int32_t>(be32);
+    // return muduo::net::sockets::networkToHost32(be32);
   }
 
   int16_t peekInt16() const
@@ -308,7 +316,8 @@ class ByteBuffer : public muduo::copyable
     assert(readableBytes() >= sizeof(int16_t));
     int16_t be16 = 0;
     ::memcpy(&be16, peek(), sizeof be16);
-    return muduo::net::sockets::networkToHost16(be16);
+    return boost::endian::big_to_native<int16_t>(be16);
+    // return muduo::net::sockets::networkToHost16(be16);
   }
 
   int8_t peekInt8() const
@@ -323,7 +332,8 @@ class ByteBuffer : public muduo::copyable
   ///
   void prependInt64(int64_t x)
   {
-    int64_t be64 = muduo::net::sockets::hostToNetwork64(x);
+    // int64_t be64 = muduo::net::sockets::hostToNetwork64(x);
+    int64_t be64 = boost::endian::native_to_big<int16_t>(x);
     prepend(&be64, sizeof be64);
   }
 
@@ -332,13 +342,15 @@ class ByteBuffer : public muduo::copyable
   ///
   void prependInt32(int32_t x)
   {
-    int32_t be32 = muduo::net::sockets::hostToNetwork32(x);
+    // int32_t be32 = muduo::net::sockets::hostToNetwork32(x);
+    int32_t be32 = boost::endian::native_to_big<int32_t>(x);
     prepend(&be32, sizeof be32);
   }
 
   void prependInt16(int16_t x)
   {
-    int16_t be16 = muduo::net::sockets::hostToNetwork16(x);
+    // int16_t be16 = muduo::net::sockets::hostToNetwork16(x);
+    int16_t be16 = boost::endian::native_to_big<int16_t>(x);
     prepend(&be16, sizeof be16);
   }
 
@@ -360,7 +372,7 @@ class ByteBuffer : public muduo::copyable
     // FIXME: use vector::shrink_to_fit() in C++ 11 if possible.
     ByteBuffer other;
     other.ensureWritableBytes(readableBytes()+reserve);
-    other.append(toStringPiece());
+    other.append(toStringView());
     swap(other);
   }
 

@@ -33,7 +33,8 @@ private:
    void stop();
 
    boost::asio::awaitable<void> handle_accept();
-   boost::asio::io_context ioc_;
+   //接受acceptor的ioc
+   boost::asio::io_context mainIoc_; 
    boost::asio::signal_set signals_;
    boost::asio::ip::tcp::acceptor acceptor_;
    boost::asio::ip::tcp::endpoint listenEndpoint_;

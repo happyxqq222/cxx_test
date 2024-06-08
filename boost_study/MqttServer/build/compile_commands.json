@@ -1,169 +1,181 @@
 [
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/main.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/main.cpp",
   "output": "CMakeFiles/MqttServer.dir/main.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/ByteBuffer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/ByteBuffer.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/ByteBuffer.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttAcl.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttAcl.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttAcl.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttCommon.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttBroker.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttBroker.cpp",
+  "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttBroker.cpp",
+  "output": "CMakeFiles/MqttServer.dir/src/MqttBroker.cpp.o"
+},
+{
+  "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttCommon.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttCommon.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttConfig.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttConfig.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttConfig.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttLogger.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttIoServicePool.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttIoServicePool.cpp",
+  "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttIoServicePool.cpp",
+  "output": "CMakeFiles/MqttServer.dir/src/MqttIoServicePool.cpp.o"
+},
+{
+  "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttLogger.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttLogger.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttServer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttServer.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttServer.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter -o CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttSession.cpp",
+  "command": "/usr/bin/g++ -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src -Wall -Wextra -Werror -g -g -std=gnu++20 -o CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttSession.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttSession.cpp",
   "output": "CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/spdlog.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/spdlog.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/spdlog.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/stdout_sinks.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/stdout_sinks.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/stdout_sinks.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/color_sinks.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/color_sinks.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/color_sinks.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/file_sinks.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/file_sinks.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/file_sinks.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/async.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/async.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/async.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/cfg.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/cfg.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/cfg.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/bundled_fmtlib_format.cpp",
+  "command": "/usr/bin/g++ -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -Wall -Wextra -Werror -g -g -std=c++20 -fPIC -o third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/bundled_fmtlib_format.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/bundled_fmtlib_format.cpp",
   "output": "third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL_BUILD -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing -o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp",
   "output": "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/main.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/main.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/main.cpp",
   "output": "third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/jsontest.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/jsontest.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/jsontest.cpp",
   "output": "third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/fuzz.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/fuzz.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/fuzz.cpp",
   "output": "third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o"
 },
 {
   "directory": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/build",
-  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/main.cpp",
+  "command": "/usr/bin/g++ -DJSON_DLL -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o -c /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/main.cpp",
   "file": "/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/main.cpp",
   "output": "third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o"
 }

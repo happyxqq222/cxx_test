@@ -50,65 +50,81 @@ cmake_ninja_workdir = /home/xqq/code/github/cxx_test/boost_study/MqttServer/buil
 build cmake_object_order_depends_target_MqttServer: phony || cmake_object_order_depends_target_spdlog
 
 build CMakeFiles/MqttServer.dir/main.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/main.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/main.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir
 
 build CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/ByteBuffer.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
 
 build CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttAcl.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
+  INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
+  OBJECT_DIR = CMakeFiles/MqttServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
+
+build CMakeFiles/MqttServer.dir/src/MqttBroker.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttBroker.cpp || cmake_object_order_depends_target_MqttServer
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttBroker.cpp.o.d
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
 
 build CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttCommon.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
 
 build CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttConfig.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
+  INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
+  OBJECT_DIR = CMakeFiles/MqttServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
+
+build CMakeFiles/MqttServer.dir/src/MqttIoServicePool.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttIoServicePool.cpp || cmake_object_order_depends_target_MqttServer
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttIoServicePool.cpp.o.d
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
 
 build CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttLogger.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
 
 build CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttServer.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
 
 build CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o: CXX_COMPILER__MqttServer_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/src/MqttSession.cpp || cmake_object_order_depends_target_MqttServer
-  DEFINES = -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
+  DEFINES = -DBOOST_STACKTRACE_ADDR2LINE_DYN_LINK -DBOOST_STACKTRACE_ADDR2LINE_NO_LIB -DFMT_SHARED -DMQ_WITH_TLS -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=gnu++20 -Wno-error=unused-parameter
+  FLAGS = -Wall -Wextra -Werror -g -g -std=gnu++20
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/src
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   OBJECT_FILE_DIR = CMakeFiles/MqttServer.dir/src
@@ -121,9 +137,9 @@ build CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o: CXX_COMPILER__MqttServer_
 #############################################
 # Link the executable /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/MqttServer
 
-build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/MqttServer: CXX_EXECUTABLE_LINKER__MqttServer_Debug CMakeFiles/MqttServer.dir/main.cpp.o CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o | /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so.1.13.0 /usr/local/lib/libyaml-cpp.a || /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so
-  FLAGS = -Wall -Wextra -Werror -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib  /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so.1.13.0  /usr/local/lib/libyaml-cpp.a  -lssl  -lcrypto
+build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/MqttServer: CXX_EXECUTABLE_LINKER__MqttServer_Debug CMakeFiles/MqttServer.dir/main.cpp.o CMakeFiles/MqttServer.dir/src/ByteBuffer.cpp.o CMakeFiles/MqttServer.dir/src/MqttAcl.cpp.o CMakeFiles/MqttServer.dir/src/MqttBroker.cpp.o CMakeFiles/MqttServer.dir/src/MqttCommon.cpp.o CMakeFiles/MqttServer.dir/src/MqttConfig.cpp.o CMakeFiles/MqttServer.dir/src/MqttIoServicePool.cpp.o CMakeFiles/MqttServer.dir/src/MqttLogger.cpp.o CMakeFiles/MqttServer.dir/src/MqttServer.cpp.o CMakeFiles/MqttServer.dir/src/MqttSession.cpp.o | /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so.1.13.0 /usr/local/lib/libyaml-cpp.a /usr/local/lib/libboost_stacktrace_addr2line.so.1.85.0 || /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so
+  FLAGS = -Wall -Wextra -Werror -g -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib:/usr/local/lib  /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so.1.13.0  /usr/local/lib/libyaml-cpp.a  -lssl  -lcrypto  /usr/local/lib/libboost_stacktrace_addr2line.so.1.85.0
   OBJECT_DIR = CMakeFiles/MqttServer.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -213,7 +229,7 @@ build cmake_object_order_depends_target_spdlog: phony || third-party/spdlog/CMak
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -221,7 +237,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__s
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -229,7 +245,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPI
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -237,7 +253,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPIL
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -245,7 +261,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILE
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -253,7 +269,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__sp
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -261,7 +277,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdl
 build third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/src/bundled_fmtlib_format.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DFMT_EXPORT -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB -Dspdlog_EXPORTS
   DEP_FILE = third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++20 -fPIC
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++20 -fPIC
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/include
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third-party/spdlog/CMakeFiles/spdlog.dir/src
@@ -275,7 +291,7 @@ build third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: 
 # Link the shared library /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so.1.13.0
 
 build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libspdlogd.so.1.13.0: CXX_SHARED_LIBRARY_LINKER__spdlog_Debug third-party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o third-party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o third-party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o third-party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o third-party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o third-party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o third-party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -Wall -Wextra -Werror -g
+  LANGUAGE_COMPILE_FLAGS = -Wall -Wextra -Werror -g -g
   OBJECT_DIR = third-party/spdlog/CMakeFiles/spdlog.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -909,7 +925,7 @@ build cmake_object_order_depends_target_jsoncpp_lib: phony || third-party/jsoncp
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cpp.o: CXX_COMPILER__jsoncpp_lib_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp || cmake_object_order_depends_target_jsoncpp_lib
   DEFINES = -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
@@ -917,7 +933,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cp
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp.o: CXX_COMPILER__jsoncpp_lib_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp || cmake_object_order_depends_target_jsoncpp_lib
   DEFINES = -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
@@ -925,7 +941,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cpp.o: CXX_COMPILER__jsoncpp_lib_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp || cmake_object_order_depends_target_jsoncpp_lib
   DEFINES = -DJSON_DLL_BUILD -Djsoncpp_lib_EXPORTS
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
@@ -939,7 +955,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cp
 # Link the shared library /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5
 
 build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5: CXX_SHARED_LIBRARY_LINKER__jsoncpp_lib_Debug third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_reader.cpp.o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_value.cpp.o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir/json_writer.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -Wall -Wextra -Werror -g
+  LANGUAGE_COMPILE_FLAGS = -Wall -Wextra -Werror -g -g
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -968,7 +984,7 @@ build cmake_object_order_depends_target_jsoncpp_static: phony || third-party/jso
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o: CXX_COMPILER__jsoncpp_static_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp || cmake_object_order_depends_target_jsoncpp_static
   DEFINES = -DJSON_DLL_BUILD
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
@@ -976,7 +992,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o: CXX_COMPILER__jsoncpp_static_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp || cmake_object_order_depends_target_jsoncpp_static
   DEFINES = -DJSON_DLL_BUILD
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
@@ -984,7 +1000,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o: CXX_COMPILER__jsoncpp_static_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp || cmake_object_order_depends_target_jsoncpp_static
   DEFINES = -DJSON_DLL_BUILD
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
@@ -998,7 +1014,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer
 # Link the static library /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.a
 
 build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.a: CXX_STATIC_LIBRARY_LINKER__jsoncpp_static_Debug third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -Wall -Wextra -Werror -g
+  LANGUAGE_COMPILE_FLAGS = -Wall -Wextra -Werror -g -g
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -1017,7 +1033,7 @@ build cmake_object_order_depends_target_jsoncpp_object: phony || third-party/jso
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o: CXX_COMPILER__jsoncpp_object_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_reader.cpp || cmake_object_order_depends_target_jsoncpp_object
   DEFINES = -DJSON_DLL_BUILD
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir
@@ -1025,7 +1041,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: CXX_COMPILER__jsoncpp_object_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_value.cpp || cmake_object_order_depends_target_jsoncpp_object
   DEFINES = -DJSON_DLL_BUILD
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir
@@ -1033,7 +1049,7 @@ build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.
 build third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o: CXX_COMPILER__jsoncpp_object_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/json_writer.cpp || cmake_object_order_depends_target_jsoncpp_object
   DEFINES = -DJSON_DLL_BUILD
   DEP_FILE = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -fPIC -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir
@@ -1128,7 +1144,7 @@ build cmake_object_order_depends_target_jsontestrunner_exe: phony || cmake_objec
 build third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o: CXX_COMPILER__jsontestrunner_exe_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/main.cpp || cmake_object_order_depends_target_jsontestrunner_exe
   DEFINES = -DJSON_DLL
   DEP_FILE = third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir
@@ -1142,7 +1158,7 @@ build third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/m
 # Link the executable /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/jsontestrunner_exe
 
 build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/jsontestrunner_exe: CXX_EXECUTABLE_LINKER__jsontestrunner_exe_Debug third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o | /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5 || /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so
-  FLAGS = -Wall -Wextra -Werror -g
+  FLAGS = -Wall -Wextra -Werror -g -g
   LINK_LIBRARIES = -Wl,-rpath,/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib  /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5
   OBJECT_DIR = third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir
   POST_BUILD = :
@@ -1258,7 +1274,7 @@ build cmake_object_order_depends_target_jsoncpp_test: phony || cmake_object_orde
 build third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o: CXX_COMPILER__jsoncpp_test_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/jsontest.cpp || cmake_object_order_depends_target_jsoncpp_test
   DEFINES = -DJSON_DLL
   DEP_FILE = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
@@ -1266,7 +1282,7 @@ build third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest
 build third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o: CXX_COMPILER__jsoncpp_test_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/fuzz.cpp || cmake_object_order_depends_target_jsoncpp_test
   DEFINES = -DJSON_DLL
   DEP_FILE = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
@@ -1274,7 +1290,7 @@ build third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp
 build third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o: CXX_COMPILER__jsoncpp_test_unscanned_Debug /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/main.cpp || cmake_object_order_depends_target_jsoncpp_test
   DEFINES = -DJSON_DLL
   DEP_FILE = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o.d
-  FLAGS = -Wall -Wextra -Werror -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
+  FLAGS = -Wall -Wextra -Werror -g -g -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic
   INCLUDES = -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/../../include -I/home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/include/json
   OBJECT_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
   OBJECT_FILE_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
@@ -1288,7 +1304,7 @@ build third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp
 # Link the executable /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/jsoncpp_test
 
 build /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/jsoncpp_test: CXX_EXECUTABLE_LINKER__jsoncpp_test_Debug third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o | /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5 || /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so
-  FLAGS = -Wall -Wextra -Werror -g
+  FLAGS = -Wall -Wextra -Werror -g -g
   LINK_LIBRARIES = -Wl,-rpath,/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib  /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5
   OBJECT_DIR = third-party/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
   POST_BUILD = cd /home/xqq/code/github/cxx_test/boost_study/MqttServer/build/third-party/jsoncpp/src/test_lib_json && /home/xqq/code/github/cxx_test/boost_study/MqttServer/output/bin/jsoncpp_test
@@ -1738,14 +1754,14 @@ build third-party/spdlog/all: phony /home/xqq/code/github/cxx_test/boost_study/M
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/xqq/code/github/cxx_test/boost_study/MqttServer/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CTestConfig.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake/JoinPaths.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInBuildInstalls.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInSourceBuilds.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/jsoncppConfig.cmake.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/pkg-config/jsoncpp.pc.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/version.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/ide.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/utils.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfigVersion.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config-version.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets-noconfig.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets.cmake /usr/local/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/local/share/cmake-3.28/Modules/CMakeCInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /usr/local/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /usr/local/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /usr/local/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/share/cmake-3.28/Modules/CTest.cmake /usr/local/share/cmake-3.28/Modules/CTestTargets.cmake /usr/local/share/cmake-3.28/Modules/CTestUseLaunchers.cmake /usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFile.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake /usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake /usr/local/share/cmake-3.28/Modules/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckStructHasMember.cmake /usr/local/share/cmake-3.28/Modules/CheckSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckTypeSize.cmake /usr/local/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU.cmake /usr/local/share/cmake-3.28/Modules/DartConfiguration.tcl.in /usr/local/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake /usr/local/share/cmake-3.28/Modules/FetchContent.cmake /usr/local/share/cmake-3.28/Modules/FindBoost.cmake /usr/local/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /usr/local/share/cmake-3.28/Modules/FindPackageMessage.cmake /usr/local/share/cmake-3.28/Modules/FindPython/Support.cmake /usr/local/share/cmake-3.28/Modules/FindPython3.cmake /usr/local/share/cmake-3.28/Modules/FindThreads.cmake /usr/local/share/cmake-3.28/Modules/GNUInstallDirs.cmake /usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux.cmake /usr/local/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /usr/local/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.5/CMakeCCompiler.cmake CMakeFiles/3.28.5/CMakeCXXCompiler.cmake CMakeFiles/3.28.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/xqq/code/github/cxx_test/boost_study/MqttServer/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CTestConfig.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake/JoinPaths.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInBuildInstalls.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInSourceBuilds.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/jsoncppConfig.cmake.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/pkg-config/jsoncpp.pc.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/version.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/ide.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/utils.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfigVersion.cmake /usr/local/lib/cmake/BoostDetectToolset-1.85.0.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/boost_stacktrace_addr2line-config-version.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/boost_stacktrace_addr2line-config.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/libboost_stacktrace_addr2line-variant-shared.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/libboost_stacktrace_addr2line-variant-static.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config-version.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets-noconfig.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets.cmake /usr/local/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/local/share/cmake-3.28/Modules/CMakeCInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /usr/local/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /usr/local/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /usr/local/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/share/cmake-3.28/Modules/CTest.cmake /usr/local/share/cmake-3.28/Modules/CTestTargets.cmake /usr/local/share/cmake-3.28/Modules/CTestUseLaunchers.cmake /usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFile.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake /usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake /usr/local/share/cmake-3.28/Modules/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckStructHasMember.cmake /usr/local/share/cmake-3.28/Modules/CheckSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckTypeSize.cmake /usr/local/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU.cmake /usr/local/share/cmake-3.28/Modules/DartConfiguration.tcl.in /usr/local/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake /usr/local/share/cmake-3.28/Modules/FetchContent.cmake /usr/local/share/cmake-3.28/Modules/FindBoost.cmake /usr/local/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /usr/local/share/cmake-3.28/Modules/FindPackageMessage.cmake /usr/local/share/cmake-3.28/Modules/FindPython/Support.cmake /usr/local/share/cmake-3.28/Modules/FindPython3.cmake /usr/local/share/cmake-3.28/Modules/FindThreads.cmake /usr/local/share/cmake-3.28/Modules/GNUInstallDirs.cmake /usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux.cmake /usr/local/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /usr/local/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.5/CMakeCCompiler.cmake CMakeFiles/3.28.5/CMakeCXXCompiler.cmake CMakeFiles/3.28.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/xqq/code/github/cxx_test/boost_study/MqttServer/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CTestConfig.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake/JoinPaths.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInBuildInstalls.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInSourceBuilds.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/jsoncppConfig.cmake.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/pkg-config/jsoncpp.pc.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/version.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/ide.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/utils.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfigVersion.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config-version.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets-noconfig.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets.cmake /usr/local/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/local/share/cmake-3.28/Modules/CMakeCInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /usr/local/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /usr/local/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /usr/local/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/share/cmake-3.28/Modules/CTest.cmake /usr/local/share/cmake-3.28/Modules/CTestTargets.cmake /usr/local/share/cmake-3.28/Modules/CTestUseLaunchers.cmake /usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFile.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake /usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake /usr/local/share/cmake-3.28/Modules/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckStructHasMember.cmake /usr/local/share/cmake-3.28/Modules/CheckSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckTypeSize.cmake /usr/local/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU.cmake /usr/local/share/cmake-3.28/Modules/DartConfiguration.tcl.in /usr/local/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake /usr/local/share/cmake-3.28/Modules/FetchContent.cmake /usr/local/share/cmake-3.28/Modules/FindBoost.cmake /usr/local/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /usr/local/share/cmake-3.28/Modules/FindPackageMessage.cmake /usr/local/share/cmake-3.28/Modules/FindPython/Support.cmake /usr/local/share/cmake-3.28/Modules/FindPython3.cmake /usr/local/share/cmake-3.28/Modules/FindThreads.cmake /usr/local/share/cmake-3.28/Modules/GNUInstallDirs.cmake /usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux.cmake /usr/local/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /usr/local/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.5/CMakeCCompiler.cmake CMakeFiles/3.28.5/CMakeCXXCompiler.cmake CMakeFiles/3.28.5/CMakeSystem.cmake: phony
+build /home/xqq/code/github/cxx_test/boost_study/MqttServer/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/cpp_properties/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/CTestConfig.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/cmake/JoinPaths.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInBuildInstalls.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/include/PreventInSourceBuilds.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/jsoncppConfig.cmake.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/pkg-config/jsoncpp.pc.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/jsontestrunner/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/src/test_lib_json/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/jsoncpp/version.in /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/CMakeLists.txt /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/ide.cmake /home/xqq/code/github/cxx_test/boost_study/MqttServer/third-party/spdlog/cmake/utils.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.85.0/BoostConfigVersion.cmake /usr/local/lib/cmake/BoostDetectToolset-1.85.0.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.85.0/boost_headers-config.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/boost_stacktrace_addr2line-config-version.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/boost_stacktrace_addr2line-config.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/libboost_stacktrace_addr2line-variant-shared.cmake /usr/local/lib/cmake/boost_stacktrace_addr2line-1.85.0/libboost_stacktrace_addr2line-variant-static.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config-version.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-config.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets-noconfig.cmake /usr/local/lib/cmake/yaml-cpp/yaml-cpp-targets.cmake /usr/local/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/local/share/cmake-3.28/Modules/CMakeCInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /usr/local/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /usr/local/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /usr/local/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/share/cmake-3.28/Modules/CTest.cmake /usr/local/share/cmake-3.28/Modules/CTestTargets.cmake /usr/local/share/cmake-3.28/Modules/CTestUseLaunchers.cmake /usr/local/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckCXXSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFile.cmake /usr/local/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake /usr/local/share/cmake-3.28/Modules/CheckLibraryExists.cmake /usr/local/share/cmake-3.28/Modules/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/CheckStructHasMember.cmake /usr/local/share/cmake-3.28/Modules/CheckSymbolExists.cmake /usr/local/share/cmake-3.28/Modules/CheckTypeSize.cmake /usr/local/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Compiler/GNU.cmake /usr/local/share/cmake-3.28/Modules/DartConfiguration.tcl.in /usr/local/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake /usr/local/share/cmake-3.28/Modules/FetchContent.cmake /usr/local/share/cmake-3.28/Modules/FindBoost.cmake /usr/local/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /usr/local/share/cmake-3.28/Modules/FindPackageMessage.cmake /usr/local/share/cmake-3.28/Modules/FindPython/Support.cmake /usr/local/share/cmake-3.28/Modules/FindPython3.cmake /usr/local/share/cmake-3.28/Modules/FindThreads.cmake /usr/local/share/cmake-3.28/Modules/GNUInstallDirs.cmake /usr/local/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /usr/local/share/cmake-3.28/Modules/Platform/Linux.cmake /usr/local/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /usr/local/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.5/CMakeCCompiler.cmake CMakeFiles/3.28.5/CMakeCXXCompiler.cmake CMakeFiles/3.28.5/CMakeSystem.cmake: phony
 
 
 #############################################
