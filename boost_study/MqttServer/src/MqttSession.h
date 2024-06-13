@@ -16,10 +16,13 @@
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_generators.hpp>
 #include <boost/uuid/uuid_io.hpp>
+#include <oneapi/tbb/concurrent_set.h>
+#include <tbb/concurrent_set.h>
 #include <chrono>
 #include <cstdint>
 #include <list>
 #include <memory>
+#include <mutex>
 #include <string>
 #include <string_view>
 #include <unordered_set>
@@ -35,12 +38,13 @@ using boost::asio::awaitable;
 class MqttBroker;
 class MqttSession : public std::enable_shared_from_this<MqttSession> {
 public:
-    MqttSession(boost::asio::ssl::stream<boost::asio::ip::tcp::socket> sslSocket,
-                boost::asio::io_context& curIoc, MqttBroker& broker);
+    MqttSession(std::unique_ptr<boost::asio::ssl::stream<boost::asio::ip::tcp::socket>>& sslSocket,
+                boost::asio::io_context& curIoc, MqttBroker* broker, bool& isClose);
     void start();
+    boost::asio::ssl::stream<boost::asio::ip::tcp::socket>& getSslSocket();
     std::string& getSessionId();
-    void moveSessionState(std::shared_ptr<MqttSession> oldSession);
-    void pushPack(const mqtt_packet_t& packet);
+    void moveSessionState(std::shared_ptr<MqttSession> newSession);
+    void pushPacket(const mqtt_packet_t& packet);
     ~MqttSession();
 
 private:
@@ -77,20 +81,20 @@ private:
      *  读取剩余消息体
      * @return awaitable<void> 
      */
-    awaitable<void> handleRemainingBody();
+    awaitable<void> handleCommand();
 
     awaitable<void> handleKeepAlive();
     awaitable<void> handlePacket();
 
     awaitable<void> handleConnect();
 
-    awaitable<MQTT_RC_CODE> handlePublish();
+    awaitable<void> handlePublish();
     awaitable<MQTT_RC_CODE> handlePuback();
     awaitable<MQTT_RC_CODE> handlePubRec();
     awaitable<MQTT_RC_CODE> handlePubRel();
     awaitable<MQTT_RC_CODE> handlePubComp();
-    awaitable<MQTT_RC_CODE> handleSubscribe();
-    awaitable<MQTT_RC_CODE> handleUnsubscribe();
+    awaitable<void> handleSubscribe();
+    awaitable<void> handleUnsubscribe();
     awaitable<MQTT_RC_CODE> handlePingReq();
     awaitable<MQTT_RC_CODE> handleDisconnect();
     awaitable<MQTT_RC_CODE> readByte(uint8_t* addr, bool recordPos);
@@ -100,37 +104,60 @@ private:
     awaitable<MQTT_RC_CODE> readUtf8String(std::string& str, bool record_pos);
     awaitable<MQTT_RC_CODE> readWillPacket(mqtt_packet_t& packet, bool record_pos);
 
-    MQTT_RC_CODE addMqttFixedHeader(std::string& packet, uint8_t cmd, uint32_t remainingLength);
+    /**
+     * 添加mqtt固定头部
+     * 
+     * @param packet 最后计算的头
+     * @param cmd 命令行
+     * @param rCount 计算
+     */
+    void addMqttFixedHeader(std::string& packet, uint8_t cmd, uint32_t rCount);
     void checkCommand();
     void checkRemainingLength();
     MQTT_RC_CODE checkSubTopic(const std::string& topicName);
-    MQTT_RC_CODE checkPubTopic(const std::string& topicName);
+    void checkPubTopic(const std::string& topicName);
     MQTT_RC_CODE checkValidateUtf8(const std::string& ustr);
 
 
 
     // awaitable<MQTT_RC_CODE> readRemainingLength();
     // awaitable<MQTT_RC_CODE> readFixedHeader();
+    /**
+     * 
+     * 发送连接ack
+     * @param ack 
+     * @param reasonCode 
+     * @return awaitable<void> 
+     */
     awaitable<void> sendConnack(uint8_t ack, uint8_t reasonCode);
     awaitable<MQTT_RC_CODE> sendSuback(uint16_t packetId, const std::string& payload);
     awaitable<MQTT_RC_CODE> sendUnsuback(uint16_t packetId);
-    awaitable<MQTT_RC_CODE> sendPuback(uint16_t packetId);
-    awaitable<MQTT_RC_CODE> sendPubrec(uint16_t packetId);
+    awaitable<void> sendPuback(uint16_t packetId);
+    awaitable<void> sendPubrec(uint16_t packetId);
     awaitable<MQTT_RC_CODE> sendPubrel(uint16_t packetId);
     awaitable<MQTT_RC_CODE> sendPubcom(uint16_t packetId);
     awaitable<MQTT_RC_CODE> sendPingresp();
 
-    awaitable<MQTT_RC_CODE> handleInflightingPackets();
+    awaitable<void> handleInflightingPackets();
     awaitable<MQTT_RC_CODE> handleWaitingMapPackets();
-    awaitable<MQTT_RC_CODE> sendMqttPackets(const std::list<mqtt_packet_t>& packetList);
+    awaitable<void> sendMqttPackets(const std::list<mqtt_packet_t>& packetList);
     awaitable<void> sendPublishQos0(mqtt_packet_t packet);
     awaitable<MQTT_RC_CODE> sendPublishQos1(mqtt_packet_t packet, bool isNew);
     awaitable<MQTT_RC_CODE> sendPublishQos2(mqtt_packet_t packet, bool isNew);
+    /**
+     * 添加自动订阅
+     * 
+     * @param subTopicList 
+     */
     void addSubscribe(const std::list<std::pair<std::string, uint8_t>>& subTopicList);
 
 public:
     //统计存在订阅项的会话，优化消息分发的性能
     static std::unordered_set<std::string> activeSubSet;
+    static std::mutex activeSubSetMtx;
+
+    static void addSubscribedClientid(const std::string clientId);
+    static void removeSubscribedClientId(const std::string clientId);
 
 private:
     class BufReaderMarkRaii {
@@ -160,11 +187,11 @@ private:
     };
 
 private:
-    boost::asio::ssl::stream<boost::asio::ip::tcp::socket> sslSocket_;
+    std::unique_ptr<boost::asio::ssl::stream<boost::asio::ip::tcp::socket>> sslSocket_;
     boost::asio::io_context& curIoc_;
     std::string username_;
     std::string clientId_;
-    MqttBroker& broker_;
+    MqttBroker* broker_;
     boost::asio::steady_timer condTimer_;
     boost::asio::steady_timer keepAliveTimer_;
     boost::asio::steady_timer checkTimer_;
@@ -186,8 +213,10 @@ private:
     ParseState parseState_ = ParseState::NONE;
     std::chrono::steady_clock::time_point deadline_;
     //是否
-    bool isClose_ = false;
+    bool& isClose_;
     boost::uuids::random_generator uuidGenerator;
+    std::string address_;
+    short port_;
 };
 
 #endif    // MQTTSERVER_MQTTSESSION_H

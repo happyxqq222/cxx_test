@@ -5,6 +5,7 @@
 #include <cstddef>
 #include <memory>
 #include <iostream>
+#include "spdlog/spdlog.h"
 
 using namespace std;
 using namespace boost;
@@ -15,7 +16,7 @@ MqttIoServicePool::MqttIoServicePool(std::size_t size) : iocs_(size), works_(siz
         works_[i] = make_unique<Work>(iocs_[i]);
     }
 
-    for (size_t i = 1; i < size; i++) {
+    for (size_t i = 0; i < size; i++) {
         threads_.emplace_back([this, i]() { iocs_[i].run(); });
     }
 }
@@ -44,5 +45,5 @@ MqttIoServicePool& MqttIoServicePool::getInstance() {
 }
 
 MqttIoServicePool::~MqttIoServicePool() {
-    std::cout << "~MqttIoServicePool" << endl;
+    SPDLOG_INFO("~MqttIoServicePool");
 }

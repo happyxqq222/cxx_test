@@ -10,27 +10,11 @@ if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g")
 endif ()
 
-if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-    message(STATUS "Build type: Debug")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
-elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
-    message(STATUS "Build type: Release")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
-elseif(CMAKE_BUILD_TYPE STREQUAL "RelWithDebInfo")
-    message(STATUS "Build type: RelWithDebInfo")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g")
-elseif(CMAKE_BUILD_TYPE STREQUAL "MinSizeRel")
-    message(STATUS "Build type: MinSizeRel")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Os")
-else()
-    message(STATUS "Build type: Default to Release with debug information")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g")
-endif()
-
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/lib)
 find_package(Boost 1.85.0 REQUIRED COMPONENTS stacktrace_addr2line)
 find_package(yaml-cpp REQUIRED)
+
 add_subdirectory(third-party/spdlog)
 add_subdirectory(third-party/jsoncpp)
 add_subdirectory(third-party/cpp_properties)
@@ -45,8 +29,13 @@ include_directories(third-party/spdlog/include)
 include_directories(third-party/cpp_properties/src/include)
 include_directories(src)
 set(OPENSSL_ROOT_DIR "/usr/local/openssl")
+
+
+
+
 add_executable(MqttServer main.cpp ${srcs})
 target_link_libraries(${PROJECT_NAME} PUBLIC  spdlog::spdlog yaml-cpp::yaml-cpp)
+target_link_libraries(${PROJECT_NAME} PUBLIC tbb)
 
 # if(MQ_WITH_TLS)
 #     find_package(OpenSSL REQUIRED)
@@ -57,3 +46,14 @@ add_definitions(-DMQ_WITH_TLS)
 target_link_directories(${PROJECT_NAME} PUBLIC /usr/lib/x86_64-linux-gnu)
 target_link_libraries(${PROJECT_NAME} PUBLIC ssl crypto)
 target_link_libraries(${PROJECT_NAME} PUBLIC ${Boost_LIBRARIES})
+
+set(CERT_OUTPUT_DIR ${PROJECT_SOURCE_DIR}/output/bin)
+add_custom_command(COMMAND 
+            ${CMAKE_COMMAND} -E copy_directory ${PROJECT_SOURCE_DIR}/certs ${CERT_OUTPUT_DIR}
+            OUTPUT ${CERT_OUTPUT_DIR}/certificate.crt OUTPUT ${CERT_OUTPUT_DIR}/private_key.pem
+            COMMENT "copy cert dir")
+
+# add_custom_target(${PROJECT_NAME} ALL
+#                   COMMAND ${CMAKE_COMMAND} -E copy_directory ${SOURCE_DIR} ${DESTINATION_DIR}
+#                   COMMENT "Copying source_dir to destination_dir"
+#                   VERBATIM)

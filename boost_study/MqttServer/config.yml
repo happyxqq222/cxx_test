@@ -50,13 +50,13 @@ server:
       default: 'deny'
 
     # 自动订阅列表, 订阅行为不受 ACL 控制
-    # auto_subscribe_list:
-    #   - topic: 'auto/topic0'
-    #     qos: 0
-    #   - topic: 'auto/topic1'
-    #     qos: 1
-    #   - topic: 'auto/topic2'
-    #     qos: 2
+    auto_subscribe_list:
+      - topic: 'auto/topic0'
+        qos: 0
+      - topic: 'auto/topic1'
+        qos: 1
+      - topic: 'auto/topic2'
+        qos: 2
 
 # SSL/TLS 相关配置, 构建启用 MQ_WITH_TLS 时读取
 ssl:
@@ -70,16 +70,16 @@ ssl:
   version: 'tls1.2'
 
   # CA 证书, 双向认证时用于验证客户端证书, 单向认证可不配置
-  cacertfile: '../certs/ca.crt'
+  cacertfile: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/certs/ca.crt'
 
   # 服务器证书
-  certfile: '../certs/server.crt'
+  certfile: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/certs/server.crt'
 
   # 服务器私钥
-  keyfile: '../certs/server.key'
+  keyfile: '/home/xqq/code/github/cxx_test/boost_study/MqttServer/certs/server.pem'
 
   # 服务器私钥受密码保护时需要提供密码
-  # password: 'MQTT'
+  password: '123456'
 
   # 认证模式, 支持单向认证 verify_none 和 双向认证 verify_peer
   # 默认认证模式为单向认证

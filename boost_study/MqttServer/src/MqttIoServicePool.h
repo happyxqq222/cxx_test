@@ -26,7 +26,7 @@ public:
 
     ~MqttIoServicePool();
 private:
-    MqttIoServicePool(std::size_t size = std::thread::hardware_concurrency());
+    MqttIoServicePool(std::size_t size = 1);
     std::vector<Io_context> iocs_;
     std::vector<WorkPtr> works_;
     std::vector<std::thread> threads_;

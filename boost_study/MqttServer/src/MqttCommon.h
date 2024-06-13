@@ -95,8 +95,9 @@ struct mqtt_packet_t {
     MQTT_MSG_STATE state;
     uint16_t packet_id;
     uint32_t max_resend_count;
+    std::string specifiedTopicName;
     std::shared_ptr<const std::string> topic_name;
-    std::shared_ptr<const std::string> paylod;
+    std::shared_ptr<const std::string> payload;
     std::chrono::time_point<std::chrono::steady_clock> expire_time;
 
     mqtt_packet_t()
@@ -106,7 +107,7 @@ struct mqtt_packet_t {
           state(MQTT_MSG_STATE::INVALID),
           max_resend_count(0U),
           topic_name(std::make_shared<const std::string>("")),
-          paylod(std::make_shared<const std::string>("")) {}
+          payload(std::make_shared<const std::string>("")) {}
 };
 
 enum class MQTT_ACL_STATE : uint8_t {
@@ -139,20 +140,17 @@ struct mqtt_acl_rule_t {
 namespace convert {
 
 template <typename InternetProtocol>
-std::string format_address(
-    const boost::asio::ip::basic_endpoint<InternetProtocol>& endpoint) {
+std::string format_address(const boost::asio::ip::basic_endpoint<InternetProtocol>& endpoint) {
     if (endpoint.address().is_v6()) {
-        return "[" + endpoint.address().to_string() + "]" + ":" +
-               std::to_string(endpoint.port());
+        return "[" + endpoint.address().to_string() + "]" + ":" + std::to_string(endpoint.port());
     }
-    return endpoint.address().to_string() + ":" +
-           std::to_string(endpoint.port());
+    return endpoint.address().to_string() + ":" + std::to_string(endpoint.port());
 }
 }    // namespace convert
 
 namespace util {
-bool check_topic_match(const std::string& pubTopic,
-                       const std::string& subTopic);
-}
+    bool check_topic_match(const std::string& pubTopic, const std::string& subTopic);
+}    // namespace util
+
 
 #endif    // MQTTSERVER_MQTTCOMMON_H

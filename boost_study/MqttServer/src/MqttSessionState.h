@@ -10,6 +10,7 @@ struct MqttSessionState {
     uint16_t keepAlive_;
     uint16_t packetIdGen_;
     mqtt_packet_t willTopic;
+    //存储客户端的订阅的主题
     std::unordered_map<std::string, uint8_t> subTopicMap_;
     std::unordered_map<uint16_t,mqtt_packet_t> waitingMap_;
     std::queue<mqtt_packet_t> inflightQueue_;

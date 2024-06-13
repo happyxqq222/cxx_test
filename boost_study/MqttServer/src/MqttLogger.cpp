@@ -22,6 +22,8 @@ bool MqttLogger::init(const std::string &logFile, uint64_t maxRotateSize, uint64
         auto file_sink = make_shared<sinks::rotating_file_sink_mt>(
                 logFile,maxRotateSize,maxRotateCount);
         vector<sink_ptr> sinkPtrs;
+        console_sink->set_level(spdlog::level::debug);
+        file_sink->set_level(spdlog::level::debug);
         sinkPtrs.push_back(console_sink);
         sinkPtrs.push_back(file_sink);
         spdlog::set_default_logger(
@@ -29,7 +31,7 @@ bool MqttLogger::init(const std::string &logFile, uint64_t maxRotateSize, uint64
                            spdlog::thread_pool(),
                            spdlog::async_overflow_policy::block)
                            );
-        spdlog::set_level(spdlog::level::info);
+        spdlog::set_level(spdlog::level::trace);
         spdlog::set_pattern("[%Y-%m-%d %T.%f] [%^%l%$] [%s:%#] %v");
 
     }catch (const spdlog_ex& ex) {
