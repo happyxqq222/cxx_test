@@ -1,3 +1,0 @@
-/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/LogicServer.dir
-/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/edit_cache.dir
-/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/CMakeFiles/rebuild_cache.dir

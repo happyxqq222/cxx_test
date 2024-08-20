@@ -1,0 +1,76 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"third-party/jsoncpp/src/jsontestrunner/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 1,
+			"id" : "jsontestrunner_exe::@3d42d5379fbdc46feef2"
+		},
+		{
+			"id" : "jsoncpp_test::@22929e425e4798d02cdf"
+		}
+	],
+	"id" : "jsoncpp_readerwriter_tests::@3d42d5379fbdc46feef2",
+	"name" : "jsoncpp_readerwriter_tests",
+	"paths" : 
+	{
+		"build" : "third-party/jsoncpp/src/jsontestrunner",
+		"source" : "third-party/jsoncpp/src/jsontestrunner"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/third-party/jsoncpp/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

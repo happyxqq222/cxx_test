@@ -1,0 +1,95 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third-party/jsoncpp/src/lib_json/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 202,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.1.9.5",
+				"/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so.25"
+			],
+			"targetId" : "jsoncpp_lib::@5bcbedec3e0a229a051b",
+			"targetIndex" : 30,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.so"
+			],
+			"targetId" : "jsoncpp_lib::@5bcbedec3e0a229a051b",
+			"targetIndex" : 30,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/xqq/code/github/cxx_test/boost_study/MqttServer/output/lib/libjsoncpp.a"
+			],
+			"targetId" : "jsoncpp_static::@5bcbedec3e0a229a051b",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				{
+					"from" : "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/.//json_reader.cpp.o",
+					"to" : "objects-Debug/jsoncpp_object/json_reader.cpp.o"
+				},
+				{
+					"from" : "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/.//json_value.cpp.o",
+					"to" : "objects-Debug/jsoncpp_object/json_value.cpp.o"
+				},
+				{
+					"from" : "third-party/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/.//json_writer.cpp.o",
+					"to" : "objects-Debug/jsoncpp_object/json_writer.cpp.o"
+				}
+			],
+			"targetId" : "jsoncpp_object::@5bcbedec3e0a229a051b",
+			"targetIndex" : 31,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third-party/jsoncpp/src/lib_json",
+		"source" : "third-party/jsoncpp/src/lib_json"
+	}
+}
