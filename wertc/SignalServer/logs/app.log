@@ -1,0 +1,1396 @@
+2024-06-17 00:05:10 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 00:05:10 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 17880 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:05:10 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:05:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 00:05:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 00:05:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:05:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:05:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:05:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:05:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:05:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:05:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:05:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:05:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:05:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1488 ms
+2024-06-17 00:05:11 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:05:12 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:05:12 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718553906592 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718553904000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718553904000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718553906000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718553905000 3 connected
+
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 00:05:12 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 00:05:12 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 00:05:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 00:05:13 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 00:05:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 00:05:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:05:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 00:05:13 INFO  com.webrtc.WebApplication - Started WebApplication in 3.467 seconds (process running for 4.287)
+2024-06-17 00:05:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 00:05:13 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 00:05:13 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 00:31:16 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-17 00:31:16 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:31:16 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:31:16 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-17 00:31:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-06-17 00:31:16 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-06-17 00:31:16 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:31:16 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+2024-06-17 00:31:16 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:31:18 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 17880 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:31:18 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:31:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:31:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:31:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:31:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:31:19 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:31:19 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:31:19 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:31:19 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:31:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:31:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 320 ms
+2024-06-17 00:31:19 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:31:19 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:31:19 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718555474045 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718555471906 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718555471000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718555472978 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718555473000 3 connected
+
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 00:31:19 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 00:31:19 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 00:31:19 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 00:31:19 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 00:31:19 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 00:31:19 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:31:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 00:31:19 INFO  com.webrtc.WebApplication - Started WebApplication in 0.754 seconds (process running for 1570.558)
+2024-06-17 00:31:19 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-17 00:31:44 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 00:31:44 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 22536 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:31:44 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:31:44 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 00:31:44 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 00:31:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:31:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:31:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:31:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:31:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:31:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:31:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:31:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:31:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:31:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1381 ms
+2024-06-17 00:31:46 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:31:46 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:31:46 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:31:46 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718555497000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718555500769 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718555500000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718555499000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718555498000 3 connected
+
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:33:56 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 00:33:56 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:33:56 INFO  o.r.connection.ConnectionsHolder - 24 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:33:56 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 00:33:56 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 00:33:56 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 00:33:56 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 00:33:57 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 00:33:57 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 00:33:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 00:33:57 INFO  com.webrtc.WebApplication - Started WebApplication in 133.45 seconds (process running for 134.899)
+2024-06-17 00:34:32 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 00:34:32 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 17172 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:34:32 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:34:32 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 00:34:32 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 00:34:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:34:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:34:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:34:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:34:33 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:34:33 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:34:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:34:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:34:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:34:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1253 ms
+2024-06-17 00:34:33 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:34:34 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:34:34 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718555667000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718555668000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718555668628 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718555667568 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718555667000 3 connected
+
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 00:34:34 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 00:34:34 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 00:34:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 00:34:34 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 00:34:34 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 00:34:34 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:34:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 00:34:35 INFO  com.webrtc.WebApplication - Started WebApplication in 3.172 seconds (process running for 3.953)
+2024-06-17 00:34:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 00:34:35 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 00:34:35 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 00:36:35 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 00:36:35 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 18380 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:36:35 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:36:35 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 00:36:35 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 00:36:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:36:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:36:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:36:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:36:36 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:36:36 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:36:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:36:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:36:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:36:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1270 ms
+2024-06-17 00:36:36 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:36:37 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:36:37 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718555789000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718555790558 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718555791622 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718555791000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718555789492 3 connected
+
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 00:36:37 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 00:36:37 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 00:36:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 00:36:38 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 00:36:38 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 00:36:38 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:36:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 00:36:38 INFO  com.webrtc.WebApplication - Started WebApplication in 3.079 seconds (process running for 3.825)
+2024-06-17 00:36:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 00:36:38 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 00:36:38 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 00:37:01 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 00:37:01 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 18916 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:37:01 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:37:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 00:37:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 00:37:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:37:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:37:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:37:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:37:03 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:37:03 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:37:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:37:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:37:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:37:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1269 ms
+2024-06-17 00:37:03 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:37:03 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:37:03 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718555817000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718555817000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718555817281 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718555816210 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718555818345 3 connected
+
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:37:03 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 00:37:03 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 00:37:04 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 00:37:04 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 00:37:04 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 00:37:04 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:37:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 00:37:04 INFO  com.webrtc.WebApplication - Started WebApplication in 3.126 seconds (process running for 3.935)
+2024-06-17 00:37:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 00:37:04 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 00:37:04 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 00:42:24 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 00:42:24 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 22644 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 00:42:24 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 00:42:24 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 00:42:24 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 00:42:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 00:42:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 00:42:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 00:42:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 00:42:25 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 00:42:25 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 00:42:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 00:42:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 00:42:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 00:42:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1499 ms
+2024-06-17 00:42:26 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 00:42:26 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 00:42:26 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 00:42:26 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718556139895 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718556139000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718556139000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718556140000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718556140964 3 connected
+
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:04:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:04:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:04:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:04:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:04:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:04:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:04:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:04:47 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:04:47 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:04:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:04:47 INFO  com.webrtc.WebApplication - Started WebApplication in 1343.972 seconds (process running for 1345.16)
+2024-06-17 01:04:52 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:04:52 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19316 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:04:52 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:04:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:04:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:04:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:04:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:04:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:04:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:04:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:04:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:04:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:04:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:04:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:04:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1413 ms
+2024-06-17 01:04:54 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:08:42 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:08:42 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718557714000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718557715000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718557713878 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718557717091 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718557716024 3 connected
+
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:08:42 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:08:42 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:08:43 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:08:43 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:08:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:08:43 INFO  com.webrtc.WebApplication - Started WebApplication in 231.073 seconds (process running for 232.306)
+2024-06-17 01:08:48 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:08:48 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 4160 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:08:48 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:08:48 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:08:48 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:08:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:08:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:08:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:08:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:08:50 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:08:50 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:08:50 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:08:50 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:08:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:08:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1502 ms
+2024-06-17 01:08:50 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:27:37 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:29:20 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718558952963 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718558951896 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718558953000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718558953000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718558954029 3 connected
+
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:29:20 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:29:20 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:29:21 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:29:21 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:29:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:29:21 INFO  com.webrtc.WebApplication - Started WebApplication in 1232.87 seconds (process running for 1233.992)
+2024-06-17 01:29:43 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:29:43 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 16732 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:29:43 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:29:43 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:29:43 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:29:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:29:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:29:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:29:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:29:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:29:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:29:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:29:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:29:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:29:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1339 ms
+2024-06-17 01:29:45 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:29:52 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:29:54 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:29:54 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718558988323 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718558987000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718558987000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718558989393 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718558987251 3 connected
+
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:30:11 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:30:11 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:30:11 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:30:11 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:30:11 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:30:11 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:30:11 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:30:12 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:30:12 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:30:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:30:12 INFO  com.webrtc.WebApplication - Started WebApplication in 29.3 seconds (process running for 30.339)
+2024-06-17 01:30:19 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:30:19 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 18696 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:30:19 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:30:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:30:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:30:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:30:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:30:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:30:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:30:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:30:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:30:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:30:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:30:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:30:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1458 ms
+2024-06-17 01:30:21 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:30:56 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:31:44 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718559271857 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718559269721 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718559268000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718559270797 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718559270000 3 connected
+
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:34:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:34:38 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:34:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:34:38 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:34:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:34:38 INFO  com.webrtc.WebApplication - Started WebApplication in 259.551 seconds (process running for 260.624)
+2024-06-17 01:44:05 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:44:05 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 18148 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:44:05 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:44:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:44:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:44:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:44:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:44:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:44:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:44:06 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:44:06 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:44:06 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:44:06 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:44:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:44:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1461 ms
+2024-06-17 01:44:06 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:44:07 ERROR org.redisson.config.Config - JSON configuration is deprecated and will be removed in future!
+2024-06-17 01:44:07 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloControl': Injection of resource dependencies failed
+2024-06-17 01:44:07 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-17 01:44:07 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-17 01:44:07 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloControl': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:303)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception with message: Can't parse config
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:490)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:467)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:270)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:300)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception with message: Can't parse config
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Can't parse config
+	at org.redisson.spring.starter.RedissonAutoConfiguration.redisson(RedissonAutoConfiguration.java:214)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 39 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: (String)"---
+clusterServersConfig:
+  idleConnectionTimeout: 10000
+  connectTimeout: 10000
+  timeout: 3000
+  retryAttempts: 3
+  retryInterval: 1500
+  failedSlaveReconnectionInterval: 3000
+  failedSlaveNodeDetector: !<org.redisson.client.FailedConnectionDetector> {}
+  password: xqq
+  subscriptionsPerConnection: 5
+  clientName: null
+  loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+  subscriptionConnectionMinimumIdleSize: 1
+  subscriptionConnectionPoolSize: 50
+  sl"[truncated 685 chars]; line: 1, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2477)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:750)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedNumberChar(ParserMinimalBase.java:566)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleInvalidNumberStart(ReaderBasedJsonParser.java:1792)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseSignedNumber(ReaderBasedJsonParser.java:1516)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:783)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4912)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4818)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3740)
+	at org.redisson.config.ConfigSupport.fromJSON(ConfigSupport.java:150)
+	at org.redisson.config.Config.fromJSON(Config.java:635)
+	at org.redisson.spring.starter.RedissonAutoConfiguration.redisson(RedissonAutoConfiguration.java:211)
+	... 42 common frames omitted
+	Suppressed: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "connectionListener" (class org.redisson.config.ClusterServersConfig), not marked as ignorable (48 known properties: "nodeAddresses", "natMapper", "subscriptionTimeout", "subscriptionsPerConnection", "keepAlive", "sslKeystorePassword", "tcpKeepAliveInterval", "retryInterval", "retryAttempts", "pingConnectionInterval", "username", "connectTimeout", "readMode", "password", "sslCiphers", "sslProvider", "subscriptionMode", "timeout", "credentialsResolver", "masterConnectionMinimumIdleSize", "sslKeystoreType", "nameMapper", "idleConnectionTimeout", "sslTruststorePassword", "sslEnableEndpointIdentification", "failedSlaveCheckInterval", "sslTruststore", "clientName", "subscriptionConnectionPoolSize", "natMap", "masterConnectionPoolSize", "subscriptionConnectionMinimumIdleSize", "sslKeystore", "checkSlotsCoverage", "tcpKeepAliveIdle", "loadBalancer", "tcpNoDelay", "failedSlaveNodeDetector", "tcpKeepAliveCount", "commandMapper", "sslProtocols", "failedSlaveReconnectionInterval", "slaveConnectionPoolSize", "tcpUserTimeout", "dnsMonitoringInterval", "shardedSubscriptionMode", "slaveConnectionMinimumIdleSize" [truncated]])
+ at [Source: (StringReader); line: 33, column: 71] (through reference chain: org.redisson.config.Config["clusterServersConfig"]->org.redisson.config.ClusterServersConfig["connectionListener"])
+		at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+		at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+		at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+		at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+		at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+		at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+		at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+		at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+		at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+		at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+		at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+		at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+		at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+		at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3740)
+		at org.redisson.config.ConfigSupport.fromYAML(ConfigSupport.java:184)
+		at org.redisson.config.Config.fromYAML(Config.java:693)
+		at org.redisson.spring.starter.RedissonAutoConfiguration.redisson(RedissonAutoConfiguration.java:206)
+		... 42 common frames omitted
+2024-06-17 01:46:10 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:46:11 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 21080 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:46:11 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:46:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:46:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:46:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:46:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:46:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:46:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:46:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:46:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:46:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:46:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:46:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:46:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1251 ms
+2024-06-17 01:46:12 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:46:12 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:46:12 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:46:13 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718559964000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718559966000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718559965000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718559965641 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718559966712 3 connected
+
+2024-06-17 01:46:13 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 01:46:13 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:46:13 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 01:46:13 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:46:13 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:46:13 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:46:13 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:46:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:46:13 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:46:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 01:46:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:46:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:46:13 INFO  com.webrtc.WebApplication - Started WebApplication in 3.027 seconds (process running for 3.79)
+2024-06-17 01:46:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 01:46:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 01:46:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-17 01:46:53 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 01:46:53 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 01:46:53 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8003, nodeType:MASTER
+2024-06-17 01:47:47 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:47:47 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 21764 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:47:47 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:47:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:47:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:47:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:47:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:47:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:47:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:47:49 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:47:49 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:47:49 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:47:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:47:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:47:49 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1358 ms
+2024-06-17 01:47:49 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:48:12 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:48:12 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:51:20 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 01:51:20 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718560273362 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718560272000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718560274000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718560274427 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718560272295 3 connected
+
+2024-06-17 01:51:38 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 01:51:38 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:51:38 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 01:51:38 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:51:38 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:51:38 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:51:38 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:51:38 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:51:38 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:51:38 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:51:38 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:51:38 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:51:39 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:51:39 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:51:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:51:39 INFO  com.webrtc.WebApplication - Started WebApplication in 232.17 seconds (process running for 233.176)
+2024-06-17 01:51:39 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 01:51:39 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 01:51:46 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:51:46 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 23776 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:51:46 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:51:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:51:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:51:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:51:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:51:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:51:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:51:47 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:51:47 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:51:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:51:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:51:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:51:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1222 ms
+2024-06-17 01:51:47 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:51:48 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:51:48 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:51:48 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718560298000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718560300062 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718560302196 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718560301130 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718560300000 3 connected
+
+2024-06-17 01:51:48 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 01:51:48 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:51:48 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 01:51:48 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:51:48 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:51:48 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:51:48 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:51:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:51:48 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:51:48 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 01:51:48 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:51:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:51:48 INFO  com.webrtc.WebApplication - Started WebApplication in 2.983 seconds (process running for 3.8)
+2024-06-17 01:51:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 01:51:49 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 01:51:49 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 01:54:54 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 01:54:54 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 01:54:54 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8003, nodeType:MASTER
+2024-06-17 01:55:00 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:55:00 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 24256 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:55:00 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:55:00 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:55:00 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:55:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:55:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:55:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:55:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:55:02 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:55:02 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:55:02 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:55:02 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:55:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:55:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1365 ms
+2024-06-17 01:55:02 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:55:07 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:55:07 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 01:55:20 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 01:55:20 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718560514647 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718560512000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718560513000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718560511435 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718560513577 3 connected
+
+2024-06-17 01:55:46 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 01:55:46 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 01:55:46 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 01:55:46 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 01:55:46 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 01:55:46 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 01:55:46 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 01:55:46 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 01:55:46 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:55:46 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 01:55:46 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 01:55:46 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 01:55:47 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 01:55:47 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 01:55:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 01:55:47 INFO  com.webrtc.WebApplication - Started WebApplication in 47.161 seconds (process running for 48.189)
+2024-06-17 01:55:47 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 01:55:47 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 01:55:52 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 01:55:52 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 22104 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 01:55:52 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 01:55:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 01:55:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 01:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 01:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 01:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-06-17 01:55:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 01:55:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 01:55:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 01:55:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 01:55:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 01:55:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 01:55:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1403 ms
+2024-06-17 01:55:54 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 01:55:56 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 01:55:56 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 02:46:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718563602258 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718563601000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718563600000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718563601000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718563601193 3 connected
+
+2024-06-17 02:46:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 02:46:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 02:46:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 02:46:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 02:46:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:46:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 02:46:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 02:46:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 02:46:48 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 02:46:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 02:46:48 INFO  com.webrtc.WebApplication - Started WebApplication in 3056.227 seconds (process running for 3057.241)
+2024-06-17 02:46:48 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 02:46:48 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 02:46:52 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 02:46:52 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 23744 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 02:46:52 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 02:46:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 02:46:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 02:46:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 02:46:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 02:46:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-06-17 02:46:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 02:46:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 02:46:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 02:46:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 02:46:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 02:46:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 02:46:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1232 ms
+2024-06-17 02:46:54 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 02:46:59 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 02:46:59 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 02:47:28 WARN  o.r.cluster.ClusterConnectionManager - null
+2024-06-17 02:48:19 WARN  o.r.cluster.ClusterConnectionManager - null
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:48:19 ERROR o.r.c.handler.PingConnectionHandler - Unable to send PING command over channel: [id: 0x4de25f5b, L:/192.168.17.1:49565 - R:192.168.17.128/192.168.17.128:8001]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.17.128:8001]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:253)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:SLAVE
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8003:
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 myself,master - 0 0 3 connected 10923-16383
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 master - 0 1718563692000 1 connected 0-5460
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718563691000 1 connected
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718563692752 2 connected 5461-10922
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718563693818 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718563691675 3 connected
+
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 02:48:19 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:48:19 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 02:48:19 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 02:48:20 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 02:48:20 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 02:48:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 02:48:20 INFO  com.webrtc.WebApplication - Started WebApplication in 87.611 seconds (process running for 88.539)
+2024-06-17 02:48:20 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 02:48:20 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 02:52:16 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 02:52:16 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 17248 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 02:52:16 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 02:52:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 02:52:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 02:52:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 02:52:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 02:52:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-06-17 02:52:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 02:52:18 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 02:52:18 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 02:52:18 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 02:52:18 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 02:52:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 02:52:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1273 ms
+2024-06-17 02:52:18 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 02:52:18 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 02:52:18 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 02:55:29 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:55:29 ERROR o.r.c.handler.PingConnectionHandler - Unable to send PING command over channel: [id: 0xfa3f9e9d, L:/192.168.17.1:49586 - R:192.168.17.128/192.168.17.128:8001]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.17.128:8001]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:253)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-17 02:57:12 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:SLAVE
+2024-06-17 02:57:12 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:57:32 WARN  o.r.cluster.ClusterConnectionManager - Command execution timeout for 192.168.17.128/192.168.17.128:8001
+2024-06-17 02:57:32 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8002:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 master - 0 1718564246000 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718564243000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 myself,master - 0 0 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718564245100 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718564246169 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718564242000 3 connected
+
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 02:57:32 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 02:57:32 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 02:57:32 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 02:57:32 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:57:32 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 02:57:32 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 02:57:33 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 02:57:33 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 02:57:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 02:57:33 INFO  com.webrtc.WebApplication - Started WebApplication in 317.105 seconds (process running for 318.028)
+2024-06-17 02:57:33 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 02:57:33 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 02:57:33 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8003, nodeType:MASTER
+2024-06-17 02:57:37 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 02:57:37 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 23808 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 02:57:37 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 02:57:37 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 02:57:37 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 02:57:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 02:57:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 02:57:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-06-17 02:57:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 02:57:38 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 02:57:38 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 02:57:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 02:57:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 02:57:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 02:57:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2024-06-17 02:57:38 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 02:57:39 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 02:57:39 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 02:57:52 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718564263868 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718564264000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718564266009 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718564265000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718564267075 3 connected
+
+2024-06-17 02:58:06 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 02:58:06 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 02:58:06 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 02:58:06 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 02:58:06 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:58:06 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 02:58:06 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 02:58:26 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 02:58:26 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19404 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 02:58:26 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 02:58:26 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 02:58:26 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 02:58:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 02:58:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 02:58:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-06-17 02:58:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 02:58:27 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 02:58:27 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 02:58:27 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 02:58:27 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 02:58:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 02:58:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1090 ms
+2024-06-17 02:58:27 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 02:58:28 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 02:58:28 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 02:58:28 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718564302000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718564300000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718564300350 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718564302519 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718564301000 3 connected
+
+2024-06-17 02:58:28 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 02:58:28 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 02:58:28 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 02:58:28 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 02:58:28 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:58:28 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 02:58:28 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 02:58:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 02:58:29 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 02:58:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 02:58:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 02:58:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 02:58:29 INFO  com.webrtc.WebApplication - Started WebApplication in 2.639 seconds (process running for 3.308)
+2024-06-17 02:58:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 02:58:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 02:58:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-17 03:00:41 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 03:00:41 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 03:00:41 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8003, nodeType:MASTER
+2024-06-17 03:00:45 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 03:00:45 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19012 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 03:00:45 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 03:00:45 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 03:00:45 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 03:00:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 03:00:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 03:00:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-06-17 03:00:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 03:00:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 03:00:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 03:00:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 03:00:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 03:00:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 03:00:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1166 ms
+2024-06-17 03:00:46 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 03:00:46 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 03:00:46 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 03:00:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718564440000 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718564439705 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718564438630 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718564439000 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718564440778 3 connected
+
+2024-06-17 03:00:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 03:00:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 03:00:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 03:00:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 03:00:47 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 03:00:47 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 03:00:47 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 03:00:47 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 03:00:47 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 03:00:47 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 03:00:47 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 03:00:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 03:00:47 INFO  com.webrtc.WebApplication - Started WebApplication in 2.701 seconds (process running for 3.368)
+2024-06-17 03:00:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 03:00:47 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 03:00:47 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 03:02:12 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 03:02:12 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 03:02:12 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8003, nodeType:MASTER
+2024-06-17 03:02:25 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-17 03:02:25 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 21284 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-17 03:02:25 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-17 03:02:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-17 03:02:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-17 03:02:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-17 03:02:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-17 03:02:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-06-17 03:02:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http) 8181 (http)
+2024-06-17 03:02:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-17 03:02:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-17 03:02:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 03:02:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-17 03:02:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 03:02:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1102 ms
+2024-06-17 03:02:26 INFO  c.webrtc.config.RedisConfigFactory - nodes:[192.168.17.128:8001, 192.168.17.128:8002, 192.168.17.128:8003, 192.168.17.128:8004, 192.168.17.128:8005, 192.168.17.128:8006]
+2024-06-17 03:02:27 INFO  org.redisson.Version - Redisson 3.31.0
+2024-06-17 03:02:27 WARN  o.r.c.SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2024-06-17 03:02:27 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8001 ,nodeType:SLAVE
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - Redis cluster nodes configuration got from 192.168.17.128/192.168.17.128:8001:
+735bf39dd35811c79c60b20b7c48669182e8b33e 192.168.17.128:8001@18001 myself,master - 0 0 1 connected 0-5460
+30ab2945ffbddfa7d9410d620ebf6276bb9816c0 192.168.17.128:8003@18003 master - 0 1718564539419 3 connected 10923-16383
+8caa440680b177d0b74de77a7a71ed7ab605bf5f 192.168.17.128:8002@18002 master - 0 1718564540000 2 connected 5461-10922
+630bbbf5fd8b98b2dabc82f79ccbb6ea3c1fe6b4 192.168.17.128:8004@18004 slave 735bf39dd35811c79c60b20b7c48669182e8b33e 0 1718564539000 1 connected
+0795dc0f4b76ab911d77fb4e1933655634ec7ebb 192.168.17.128:8005@18005 slave 8caa440680b177d0b74de77a7a71ed7ab605bf5f 0 1718564540495 2 connected
+80ddbaf65116be3d8bb74a9ad64944240546fef9 192.168.17.128:8006@18006 slave 30ab2945ffbddfa7d9410d620ebf6276bb9816c0 0 1718564541566 3 connected
+
+2024-06-17 03:02:27 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8002 ,nodeType:SLAVE
+2024-06-17 03:02:27 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8003 ,nodeType:SLAVE
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8002
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8001
+2024-06-17 03:02:27 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8005 ,nodeType:SLAVE
+2024-06-17 03:02:27 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8004 ,nodeType:SLAVE
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8003
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8005
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8005] added for master: redis://192.168.17.128:8002 slot ranges: [[5461-10922]]
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8002 added for slot ranges: [[5461-10922]]
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8004
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8004] added for master: redis://192.168.17.128:8001 slot ranges: [[0-5460]]
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8001 added for slot ranges: [[0-5460]]
+2024-06-17 03:02:27 INFO  c.w.listener.RedisConnectionListener - onConnect 192.168.17.128:8006 ,nodeType:SLAVE
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 03:02:27 INFO  o.r.connection.ConnectionsHolder - 2 connections initialized for 192.168.17.128/192.168.17.128:8006
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - slaves: [redis://192.168.17.128:8006] added for master: redis://192.168.17.128:8003 slot ranges: [[10923-16383]]
+2024-06-17 03:02:27 INFO  o.r.cluster.ClusterConnectionManager - master: redis://192.168.17.128:8003 added for slot ranges: [[10923-16383]]
+2024-06-17 03:02:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-17 03:02:27 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-17 03:02:27 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-17 03:02:27 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-17 03:02:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) 8181 (http) with context path ''
+2024-06-17 03:02:27 INFO  com.webrtc.WebApplication - Started WebApplication in 2.658 seconds (process running for 3.332)
+2024-06-17 03:02:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 03:02:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 03:02:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 03:02:43 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8001, nodeType:MASTER
+2024-06-17 03:02:43 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8002, nodeType:MASTER
+2024-06-17 03:02:43 INFO  c.w.listener.RedisConnectionListener - onDisconnect 192.168.17.128:8003, nodeType:MASTER

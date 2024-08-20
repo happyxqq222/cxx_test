@@ -8,17 +8,17 @@
 #include <boost/uuid/uuid_io.hpp>
 #include <boost/uuid/uuid_generators.hpp>
 #include <json/json.h>
-#include <json/value.h>
-#include <json/reader.h>
 
 #include "LogicSystem.h"
 
 using namespace std;
+using namespace boost::asio;
 
 Session::Session(boost::asio::io_context &ioc, Server *server)
     : socket_(ioc),
       server_(server),
-      data_(1024 * 2, 0) {
+      data_(1024 * 2, 0),
+      strand_(ioc.get_executor()) {
     boost::uuids::uuid uuidG = boost::uuids::random_generator()();
     id_ = boost::uuids::to_string(uuidG);
 }
@@ -37,8 +37,13 @@ std::string &Session::getId() {
 
 void Session::start() {
     socket_.async_read_some(
-        boost::asio::buffer(data_.data(), data_.size()),
-        bind(&Session::handleRead, this, placeholders::_1, placeholders::_2, sharedSelf()));
+        buffer(data_.data(), data_.size()),
+        bind_executor(strand_, bind(&Session::handleRead, this,
+                                    std::placeholders::_1,
+                                    std::placeholders::_2,
+                                    sharedSelf())
+        )
+    );
 }
 
 void Session::send(const std::shared_ptr<ByteBuffer> &buf, short msgId) {
@@ -52,10 +57,12 @@ void Session::send(const std::shared_ptr<ByteBuffer> &buf, short msgId) {
         return;
     }
     auto &msgNode = sendQueue_.front();
-    boost::asio::async_write(
+    async_write(
         socket_,
-        boost::asio::buffer(msgNode->getBuf()->peek(), msgNode->getBuf()->readableBytes()),
-        bind(&Session::handleWrite, this, std::placeholders::_1, std::placeholders::_2, sharedSelf())
+        buffer(msgNode->getBuf()->peek(), msgNode->getBuf()->readableBytes()),
+        bind_executor(strand_,
+                      bind(&Session::handleWrite, this, std::placeholders::_1, std::placeholders::_2, sharedSelf())
+        )
     );
 }
 
@@ -63,8 +70,8 @@ void Session::send(const std::string &msg, short msgId) {
     shared_ptr<ByteBuffer> buf = make_shared<ByteBuffer>();
     buf->appendInt16(msgId);
     buf->appendInt16(msg.size());
-    buf->append(msg.data(),msg.size());
-    send(buf,msgId);
+    buf->append(msg.data(), msg.size());
+    send(buf, msgId);
 }
 
 void Session::close() {
@@ -77,17 +84,21 @@ std::shared_ptr<Session> Session::sharedSelf() {
 
 void Session::handleRead(boost::system::error_code error, size_t readedBytes, std::shared_ptr<Session> sharedSelf) {
     try {
-        if(!error) {
-            recvBuf_.append(data_.data(),readedBytes);
+        if (!error) {
+            recvBuf_.append(data_.data(), readedBytes);
             for (;;) {
-                if(recvBuf_.readableBytes() > 4) {
+                if (recvBuf_.readableBytes() > 4) {
                     recvBuf_.markReaderIndex();
                     short msgId = recvBuf_.readInt16();
                     short bodyLen = recvBuf_.readInt16();
-                    if(recvBuf_.readableBytes() >= bodyLen) {
+                    if (recvBuf_.readableBytes() >= bodyLen) {
                         string body = recvBuf_.retrieveAsString(bodyLen);
-                        shared_ptr<LogicNode> logicNode = make_shared<LogicNode>(sharedSelf,msgId,body);
+                        shared_ptr<LogicNode> logicNode = make_shared<LogicNode>(sharedSelf, msgId, body);
                         LogicSystem::getInstance()->postMsgToQueue(logicNode);
+                        //做一次拷贝  释放已读的内容
+                        ByteBuffer tmpBuf;
+                        tmpBuf.append(recvBuf_.peek(),recvBuf_.readableBytes());
+                        recvBuf_.swap(tmpBuf);
                     } else {
                         //回退读索引
                         recvBuf_.resetReaderIndex();
@@ -100,15 +111,16 @@ void Session::handleRead(boost::system::error_code error, size_t readedBytes, st
                 }
             }
             socket_.async_read_some(
-                boost::asio::buffer(data_.data(),data_.size()),
-                bind(&Session::handleRead,this,placeholders::_1,placeholders::_2,sharedSelf)
-                );
+                buffer(data_.data(), data_.size()),
+                bind_executor(strand_,
+                              bind(&Session::handleRead, this, std::placeholders::_1, std::placeholders::_2,
+                                   sharedSelf))
+            );
         } else {
             this->close();
             server_->clearSession(id_);
         }
-
-    } catch (exception& e) {
+    } catch (exception &e) {
         cout << "Exception code is " << e.what() << endl;
     }
 }
@@ -122,9 +134,12 @@ void Session::handleWrite(boost::system::error_code error, size_t writedBytes, s
                 auto &msgNode = sendQueue_.front();
                 std::shared_ptr<ByteBuffer> &buf = msgNode->getBuf();
                 boost::asio::async_write(socket_,
-                                         boost::asio::buffer(buf->peek(), buf->readableBytes()),
-                                         bind(&Session::handleWrite, this, placeholders::_1, placeholders::_2,
-                                              sharedSelf));
+                                         buffer(buf->peek(), buf->readableBytes()),
+                                         bind_executor(strand_, bind(&Session::handleWrite, this,
+                                                                     std::placeholders::_1,
+                                                                     std::placeholders::_2,
+                                                                     sharedSelf))
+                );
             }
         } else {
             std::cout << "handle write failed, error is " << error.what() << endl;

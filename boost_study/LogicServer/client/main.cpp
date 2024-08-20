@@ -36,9 +36,19 @@ int main() {
         boost::asio::write(sock,boost::asio::buffer(buf.peek(),buf.readableBytes()));
         string recvMsg(256,0);
         size_t recvLen = sock.read_some(boost::asio::buffer(recvMsg.data(),recvMsg.size()));
-        cout << "收到 :" << string(recvMsg.data()+4,recvMsg.data()+recvMsg.length()) << endl;
+        cout << "收到长度:" << recvLen << endl;
+        string str = string(recvMsg.data()+4,recvMsg.data()+recvLen);
+        cout << "收到 :" << str << endl;
+        cout << "-------------------------------" << endl;
     } catch (std::exception& e) {
         std::cerr << "exception :" << e.what() << endl;
     }
     return 0;
 }
+
+class A {
+public:
+    A() {
+        cout << "A" << endl;
+    }
+};

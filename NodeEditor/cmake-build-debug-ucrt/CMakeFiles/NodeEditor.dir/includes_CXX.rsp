@@ -1,0 +1,1 @@
+-isystem "D:/code/cxx_test/NodeEditor/cmake-build-debug-ucrt/NodeEditor_autogen/include" -isystem D:/tools/OMDev/tools/msys/ucrt64/include/QtCore -isystem "D:/tools/OMDev/tools/msys/ucrt64/share/qt5/mkspecs/win32-g++" -isystem D:/tools/OMDev/tools/msys/ucrt64/include/QtWidgets -isystem D:/tools/OMDev/tools/msys/ucrt64/include/QtGui

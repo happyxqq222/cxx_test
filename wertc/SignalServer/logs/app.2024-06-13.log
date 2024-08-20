@@ -1,0 +1,893 @@
+2024-06-13 01:24:28 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 22136 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:24:28 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:24:28 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:24:28 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:24:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:24:29 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:24:29 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:24:29 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:24:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:24:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 681 ms
+2024-06-13 01:24:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:24:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:24:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:24:29 INFO  com.webrtc.WebApplication - Started WebApplication in 1.251 seconds (process running for 1.873)
+2024-06-13 01:24:29 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:24:51 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:24:52 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:24:52 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 4908 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:24:52 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:24:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:24:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:24:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:24:52 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:24:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:24:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:24:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:24:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
+2024-06-13 01:24:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:24:53 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:24:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:24:53 INFO  com.webrtc.WebApplication - Started WebApplication in 1.239 seconds (process running for 1.854)
+2024-06-13 01:24:53 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:25:22 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:25:22 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:25:23 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 12016 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:25:23 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:25:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:25:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:25:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:25:23 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:25:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:25:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:25:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:25:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 685 ms
+2024-06-13 01:25:24 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:25:24 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:25:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:25:24 INFO  com.webrtc.WebApplication - Started WebApplication in 1.255 seconds (process running for 1.869)
+2024-06-13 01:25:24 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:26:09 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:26:09 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:26:10 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 4760 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:26:10 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:26:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:26:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:26:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:26:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:26:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:26:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:26:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:26:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 670 ms
+2024-06-13 01:26:11 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:26:11 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:26:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:26:11 INFO  com.webrtc.WebApplication - Started WebApplication in 1.244 seconds (process running for 1.851)
+2024-06-13 01:26:11 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:26:54 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:26:54 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:26:54 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 396 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:26:54 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:26:54 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:26:54 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:26:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:26:55 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:26:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:26:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:26:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:26:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 835 ms
+2024-06-13 01:26:55 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:26:55 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:26:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:26:55 INFO  com.webrtc.WebApplication - Started WebApplication in 1.472 seconds (process running for 2.208)
+2024-06-13 01:26:55 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:27:11 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:27:11 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:27:11 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 1004 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:27:11 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:27:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:27:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:27:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:27:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:27:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:27:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:27:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:27:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 868 ms
+2024-06-13 01:27:12 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:27:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:27:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:27:12 INFO  com.webrtc.WebApplication - Started WebApplication in 1.544 seconds (process running for 2.308)
+2024-06-13 01:27:12 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:27:22 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:27:22 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:27:22 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 14808 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:27:22 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:27:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:27:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:27:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:27:23 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:27:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:27:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:27:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:27:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 859 ms
+2024-06-13 01:27:23 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:27:23 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:27:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:27:23 INFO  com.webrtc.WebApplication - Started WebApplication in 1.476 seconds (process running for 2.218)
+2024-06-13 01:27:23 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:28:07 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:28:07 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:28:07 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19604 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:28:07 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:28:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:28:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:28:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:28:08 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:28:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:28:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:28:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:28:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+2024-06-13 01:28:09 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:28:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:28:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:28:09 INFO  com.webrtc.WebApplication - Started WebApplication in 1.548 seconds (process running for 2.317)
+2024-06-13 01:28:09 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:29:29 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:29:29 INFO  com.webrtc.WebApplication - log test
+2024-06-13 01:29:29 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 21956 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:29:29 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:29:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:29:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:29:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:29:30 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:29:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:29:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:29:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:29:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 755 ms
+2024-06-13 01:29:30 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:29:30 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:29:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:29:30 INFO  com.webrtc.WebApplication - Started WebApplication in 1.312 seconds (process running for 1.94)
+2024-06-13 01:29:30 INFO  com.webrtc.WebApplication - WebApplication started
+2024-06-13 01:30:59 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 22000 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:30:59 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:30:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:30:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:30:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:30:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:30:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:30:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:30:59 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:30:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
+2024-06-13 01:31:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:31:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:31:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:31:00 INFO  com.webrtc.WebApplication - Started WebApplication in 1.283 seconds (process running for 1.905)
+2024-06-13 01:31:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-13 01:31:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-13 01:31:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-13 01:31:39 INFO  com.webrtc.control.HelloControl - hello
+2024-06-13 01:32:56 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:32:56 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:32:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:32:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:32:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-06-13 01:32:57 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:32:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:32:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:32:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:32:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 768 ms
+2024-06-13 01:32:57 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:32:57 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-06-13 01:32:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-06-13 01:32:57 INFO  com.webrtc.WebApplication - Started WebApplication in 1.339 seconds (process running for 1.999)
+2024-06-13 01:40:31 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-13 01:40:31 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+2024-06-13 01:40:31 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-13 01:40:31 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-06-13 01:40:31 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+2024-06-13 01:40:31 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:40:31 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:40:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (http)
+2024-06-13 01:40:31 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8443"]
+2024-06-13 01:40:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:40:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:40:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:40:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 153 ms
+2024-06-13 01:40:31 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:40:31 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8443"]
+2024-06-13 01:40:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (http) with context path ''
+2024-06-13 01:40:31 INFO  com.webrtc.WebApplication - Started WebApplication in 0.232 seconds (process running for 456.047)
+2024-06-13 01:40:31 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-13 01:40:34 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-13 01:40:34 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8443"]
+2024-06-13 01:40:34 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-13 01:40:34 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8443"]
+2024-06-13 01:40:34 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8443"]
+2024-06-13 01:40:34 ERROR o.s.boot.SpringApplication - Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
+ in 'reader', line 3, column 3:
+      s
+      ^
+could not find expected ':'
+ in 'reader', line 3, column 4:
+      s
+       ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.removePossibleSimpleKey(ScannerImpl.java:575)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchStreamEnd(ScannerImpl.java:646)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:357)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:662)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:199)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-06-13 01:40:37 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:40:37 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:40:37 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-13 01:40:37 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 01:40:37 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.ssl' to org.springframework.boot.web.server.Ssl:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [@org.springframework.boot.context.properties.NestedConfigurationProperty org.springframework.boot.web.server.Ssl]
+
+Action:
+
+Update your application's configuration
+
+2024-06-13 01:40:39 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:40:39 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:40:39 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-13 01:40:39 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 01:40:39 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.ssl' to org.springframework.boot.web.server.Ssl:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [@org.springframework.boot.context.properties.NestedConfigurationProperty org.springframework.boot.web.server.Ssl]
+
+Action:
+
+Update your application's configuration
+
+2024-06-13 01:41:13 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:41:13 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:41:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 01:41:13 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:41:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:41:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:41:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:41:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 131 ms
+2024-06-13 01:41:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:41:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:41:13 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-06-13 01:41:13 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:41:13 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-13 01:41:13 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:41:13 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:41:13 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 01:41:13 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:957)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:611)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:229)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 16 common frames omitted
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:235)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1046)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:232)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Cannot obtain resource for specified location [C:\Users\Administrator/.keystore]: no readable file, classloader resource, or this is not a resolvable URI
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:106)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:70)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:207)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1271)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1357)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:633)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1043)
+	... 22 common frames omitted
+Caused by: java.io.IOException: Cannot obtain resource for specified location [C:\Users\Administrator/.keystore]: no readable file, classloader resource, or this is not a resolvable URI
+	at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:112)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:200)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:207)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:282)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:246)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:104)
+	... 28 common frames omitted
+2024-06-13 01:41:15 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:41:15 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:41:16 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-13 01:41:16 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 01:41:16 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Could not load store: Unable to create key store: Could not load store from 'class'
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslStoreProvider(SslConnectorCustomizer.java:124)
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSsl(SslConnectorCustomizer.java:93)
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.customize(SslConnectorCustomizer.java:59)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeSsl(TomcatServletWebServerFactory.java:367)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeConnector(TomcatServletWebServerFactory.java:344)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:203)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
+	... 11 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to create key store: Could not load store from 'class'
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.createKeyStore(JksSslStoreBundle.java:89)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.getKeyStore(JksSslStoreBundle.java:58)
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslStoreProvider(SslConnectorCustomizer.java:116)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not load store from 'class'
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.loadKeyStore(JksSslStoreBundle.java:118)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.createKeyStore(JksSslStoreBundle.java:84)
+	... 20 common frames omitted
+Caused by: java.io.FileNotFoundException: D:\code\cxx_test\wertc\WebrtcHttp\class (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+	at java.base/java.net.URL.openStream(URL.java:1325)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.loadKeyStore(JksSslStoreBundle.java:113)
+	... 21 common frames omitted
+2024-06-13 01:41:17 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 20388 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:41:17 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:41:17 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-13 01:41:17 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 01:41:17 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Could not load store: Unable to create key store: Could not load store from 'classpath'
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslStoreProvider(SslConnectorCustomizer.java:124)
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSsl(SslConnectorCustomizer.java:93)
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.customize(SslConnectorCustomizer.java:59)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeSsl(TomcatServletWebServerFactory.java:367)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeConnector(TomcatServletWebServerFactory.java:344)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:203)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
+	... 11 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to create key store: Could not load store from 'classpath'
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.createKeyStore(JksSslStoreBundle.java:89)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.getKeyStore(JksSslStoreBundle.java:58)
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslStoreProvider(SslConnectorCustomizer.java:116)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not load store from 'classpath'
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.loadKeyStore(JksSslStoreBundle.java:118)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.createKeyStore(JksSslStoreBundle.java:84)
+	... 20 common frames omitted
+Caused by: java.io.FileNotFoundException: D:\code\cxx_test\wertc\WebrtcHttp\classpath (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+	at java.base/java.net.URL.openStream(URL.java:1325)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.loadKeyStore(JksSslStoreBundle.java:113)
+	... 21 common frames omitted
+2024-06-13 01:41:28 ERROR o.s.boot.SpringApplication - Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 4, column 25:
+        key-store: classpath:
+                            ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:927)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:416)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:662)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:199)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-06-13 01:41:53 ERROR o.s.boot.SpringApplication - Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 4, column 25:
+        key-store: classpath:
+                            ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:927)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:416)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:662)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:199)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-06-13 01:42:29 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19668 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:42:29 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:42:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:42:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:42:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 01:42:30 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:42:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:42:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:42:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:42:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 860 ms
+2024-06-13 01:42:30 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:42:30 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:42:30 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 01:42:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) with context path ''
+2024-06-13 01:42:30 INFO  com.webrtc.WebApplication - Started WebApplication in 1.561 seconds (process running for 2.296)
+2024-06-13 01:45:45 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19036 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:45:45 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:45:45 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:45:45 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:45:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 443 (https)
+2024-06-13 01:45:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-13 01:45:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:45:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:45:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:45:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 787 ms
+2024-06-13 01:45:46 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:45:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-13 01:45:46 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 01:45:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-13 01:45:46 INFO  com.webrtc.WebApplication - Started WebApplication in 1.42 seconds (process running for 2.052)
+2024-06-13 01:51:53 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-13 01:51:53 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-13 01:51:53 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-13 01:51:53 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-443"]
+2024-06-13 01:51:53 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-443"]
+2024-06-13 01:51:53 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19036 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:51:53 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:51:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 01:51:53 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:51:53 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:51:53 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:51:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:51:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 183 ms
+2024-06-13 01:51:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:51:53 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:51:53 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 01:51:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) with context path ''
+2024-06-13 01:51:53 INFO  com.webrtc.WebApplication - Started WebApplication in 0.27 seconds (process running for 369.345)
+2024-06-13 01:51:53 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-13 01:51:59 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 16972 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:51:59 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:51:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:51:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:51:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 01:51:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:51:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:51:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:51:59 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:51:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
+2024-06-13 01:52:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:52:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:52:00 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 01:52:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) with context path ''
+2024-06-13 01:52:00 INFO  com.webrtc.WebApplication - Started WebApplication in 1.374 seconds (process running for 1.997)
+2024-06-13 01:56:01 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 25092 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:56:01 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:56:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:56:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:56:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 01:56:02 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:56:02 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:56:02 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:56:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:56:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+2024-06-13 01:56:02 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:56:02 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:56:02 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 01:56:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) with context path ''
+2024-06-13 01:56:02 INFO  com.webrtc.WebApplication - Started WebApplication in 1.585 seconds (process running for 2.328)
+2024-06-13 01:57:27 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 16724 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 01:57:27 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 01:57:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 01:57:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 01:57:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 01:57:28 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:57:28 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 01:57:28 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 01:57:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 01:57:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 799 ms
+2024-06-13 01:57:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 01:57:28 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 01:57:28 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 01:57:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) with context path ''
+2024-06-13 01:57:28 INFO  com.webrtc.WebApplication - Started WebApplication in 1.425 seconds (process running for 2.061)
+2024-06-13 02:02:01 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 17692 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 02:02:01 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 02:02:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 02:02:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 02:02:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https)
+2024-06-13 02:02:02 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 02:02:02 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 02:02:02 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 02:02:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 02:02:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 887 ms
+2024-06-13 02:02:02 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 02:02:02 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 02:02:02 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 02:02:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) with context path ''
+2024-06-13 02:02:02 INFO  com.webrtc.WebApplication - Started WebApplication in 1.581 seconds (process running for 2.317)
+2024-06-13 02:20:20 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 19108 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 02:20:20 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 02:20:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 02:20:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 02:20:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2024-06-13 02:20:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 02:20:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-13 02:20:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 02:20:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 02:20:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 02:20:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 831 ms
+2024-06-13 02:20:21 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 02:20:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2024-06-13 02:20:21 INFO  com.webrtc.WebApplication - Started WebApplication in 1.485 seconds (process running for 2.149)
+2024-06-13 02:39:25 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 13380 (D:\code\cxx_test\wertc\WebrtcHttp\target\classes started by Administrator in D:\code\cxx_test\wertc\WebrtcHttp)
+2024-06-13 02:39:25 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 02:39:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 02:39:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 02:39:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https) 8181 (http)
+2024-06-13 02:39:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 02:39:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-13 02:39:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 02:39:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 02:39:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 02:39:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 766 ms
+2024-06-13 02:39:26 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 02:39:26 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 02:39:26 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 02:39:26 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-13 02:39:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) 8181 (http) with context path ''
+2024-06-13 02:39:26 INFO  com.webrtc.WebApplication - Started WebApplication in 1.374 seconds (process running for 2.005)
+2024-06-13 22:24:47 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-13 22:24:47 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 9496 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-13 22:24:47 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 22:24:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 22:24:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 22:24:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https) 8181 (http)
+2024-06-13 22:24:48 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 22:24:48 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-13 22:24:48 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 22:24:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 22:24:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 22:24:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 908 ms
+2024-06-13 22:24:48 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xrtcRequestService': Invocation of init method failed
+2024-06-13 22:24:48 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-13 22:24:48 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 22:24:48 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xrtcRequestService': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "rpcInfos" is null
+	at com.webrtc.framework.XrtcRequestService.initXrpc(XrtcRequestService.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:369)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:193)
+	... 21 common frames omitted
+2024-06-13 22:25:47 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-13 22:25:47 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 2740 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-13 22:25:47 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 22:25:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 22:25:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 22:25:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https) 8181 (http)
+2024-06-13 22:25:47 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 22:25:47 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-13 22:25:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 22:25:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 22:25:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 22:25:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 811 ms
+2024-06-13 22:25:48 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xrtcRequestService': Invocation of init method failed
+2024-06-13 22:25:48 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-13 22:25:48 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-13 22:25:48 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xrtcRequestService': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.webrtc.WebApplication.main(WebApplication.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "rpcInfos" is null
+	at com.webrtc.framework.XrtcRequestService.initXrpc(XrtcRequestService.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:369)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:193)
+	... 21 common frames omitted
+2024-06-13 22:26:58 INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2024-06-13 22:26:58 INFO  com.webrtc.WebApplication - Starting WebApplication using Java 21.0.3 with PID 11512 (D:\code\cxx_test\wertc\SignalServer\target\classes started by Administrator in D:\code\cxx_test\wertc\SignalServer)
+2024-06-13 22:26:58 INFO  com.webrtc.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-13 22:26:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-13 22:26:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 22:26:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8443 (https) 8181 (http)
+2024-06-13 22:26:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 22:26:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-06-13 22:26:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-13 22:26:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-13 22:26:59 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-13 22:26:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 797 ms
+2024-06-13 22:26:59 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-13 22:26:59 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2024-06-13 22:26:59 INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [C:\Users\Administrator/.keystore] using alias [myalias] and with trust store [null]
+2024-06-13 22:26:59 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-06-13 22:26:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8443 (https) 8181 (http) with context path ''
+2024-06-13 22:26:59 INFO  com.webrtc.WebApplication - Started WebApplication in 1.5 seconds (process running for 2.199)

@@ -36,6 +36,7 @@ private:
     std::vector<char> data_;
     tbb::spin_mutex sendLock_;
     constexpr static int sendQueueCapacity = 1024;
+    boost::asio::strand<boost::asio::io_context::executor_type> strand_;
 };
 
 

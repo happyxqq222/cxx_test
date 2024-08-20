@@ -1,0 +1,38 @@
+server:
+  port: 80
+#  ssl:
+#    key-store: classpath:keystore.p12
+#    key-store-password: 123456
+#    key-store-type: PKCS12
+#    key-alias: myalias
+
+  rpcInfos:
+    - server: 192.168.17.128
+      port: 6666
+      connectTimeout: 100
+      readTimeout: 500
+      writeTimeout: 500
+    - server: 127.0.0.1
+      port: 6666
+      connectTimeout: 100
+      readTimeout: 500
+      writeTimeout: 500
+spring:
+  redis:
+    redisson:
+      file: classpath:redisson.yaml
+  data:
+    redis:
+      cluster:
+        nodes:
+          - 192.168.17.128:8001
+          - 192.168.17.128:8002
+          - 192.168.17.128:8003
+          - 192.168.17.128:8004
+          - 192.168.17.128:8005
+          - 192.168.17.128:8006
+#    lettuce:
+#      pool:
+#        max-active: 8
+#        max-idle: 5
+#        max-wait: 100

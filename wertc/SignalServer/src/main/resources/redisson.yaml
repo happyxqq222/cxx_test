@@ -1,0 +1,37 @@
+---
+clusterServersConfig:
+  idleConnectionTimeout: 10000
+  connectTimeout: 10000
+  timeout: 3000
+  retryAttempts: 3
+  retryInterval: 1500
+  failedSlaveReconnectionInterval: 3000
+  failedSlaveNodeDetector: !<org.redisson.client.FailedConnectionDetector> {}
+  password: xqq
+  subscriptionsPerConnection: 5
+  clientName: null
+  loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+  subscriptionConnectionMinimumIdleSize: 1
+  subscriptionConnectionPoolSize: 50
+  slaveConnectionMinimumIdleSize: 2
+  slaveConnectionPoolSize: 64
+  masterConnectionMinimumIdleSize: 2
+  masterConnectionPoolSize: 64
+  readMode: "SLAVE"
+  subscriptionMode: "SLAVE"
+  nodeAddresses:
+    - "redis://192.168.17.128:8001"
+    - "redis://192.168.17.128:8002"
+    - "redis://192.168.17.128:8003"
+    - "redis://192.168.17.128:8004"
+    - "redis://192.168.17.128:8005"
+    - "redis://192.168.17.128:8006"
+  scanInterval: 1000
+  pingConnectionInterval: 30000
+  keepAlive: false
+  tcpNoDelay: true
+threads: 1
+nettyThreads: 1
+codec: !<org.redisson.codec.Kryo5Codec> {}
+transportMode: "NIO"
+connectionListener: !<com.webrtc.listener.RedisConnectionListener> {}

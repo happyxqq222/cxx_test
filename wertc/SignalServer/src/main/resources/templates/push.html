@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>1V1屏幕共享-推流端</title>
+      <style type="text/css">
+          body {
+              font-size: 15px;
+              display: flex;
+              /*justify-content: center;*/
+              align-items: center;
+              min-height: 100vh;
+              margin-top: 100px;
+              flex-direction: column;
+          }
+          video{
+              width: 1080px;
+              height: 720px;
+          }
+          body{
+              font-size: 15px;
+          }
+          #pushTitle{
+              height: 30px;
+              line-height: 30px;
+              margin-bottom: 5px;
+          }
+          #pushControl{
+              height: 50px;
+              width: 720px;
+              line-height: 50px;
+              float: left;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+          }
+          #pushControl>button{
+              height: 30px;
+              width: 80px;
+              background-color: #d84a38;
+              border-radius: 4px;
+              border: 0px solid white;
+              color: white;
+              margin-top: 10px;
+              margin-left: 5px;
+          }
+          #pushControl>button:hover{
+              background-color: black;
+              color: white;
+          }
+      </style>
+  </head>
+
+<body>
+    <h3>1v1屏幕共享-推流端</h3>
+    <div id="pushTitle">
+        推流端基本信息
+        <span>
+            uid:<spn th:text="${uid}"></spn>
+            streamName:<span th:text="${streamName}"></span>
+            audio:<span th:text="${audio}"></span>
+            video:<span th:text="${video}"></span>
+        </span>
+    </div>
+    <div>
+        <video id="localVideo" controls autoplay></video>
+    </div>
+    <div id="pushControl">
+        <button id="pushBtn">开始推流</button>
+        <button id="stopBtn">停止推流</button>
+    </div>
+
+    <input type="hidden" id="uid" th:name="uid" th:value="${uid}" />
+    <input type="hidden" id="streamName" th:name="streamName" th:value="${streamName}" />
+    <input type="hidden" id="audio" th:name="audio" th:value="${audio}" />
+    <input type="hidden" id="video" th:name="video" th:value="${video}" />
+
+    <script th:src="@{../adapter.js}"></script>
+    <script th:src="@{../jquery-3.7.1.min.js}"></script>
+    <script th:src="@{../push.js}"></script>
+</body>
+</html>

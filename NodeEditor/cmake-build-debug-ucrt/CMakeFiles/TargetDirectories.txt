@@ -1,0 +1,5 @@
+D:/code/cxx_test/NodeEditor/cmake-build-debug-ucrt/CMakeFiles/NodeEditor.dir
+D:/code/cxx_test/NodeEditor/cmake-build-debug-ucrt/CMakeFiles/edit_cache.dir
+D:/code/cxx_test/NodeEditor/cmake-build-debug-ucrt/CMakeFiles/rebuild_cache.dir
+D:/code/cxx_test/NodeEditor/cmake-build-debug-ucrt/CMakeFiles/NodeEditor_autogen_timestamp_deps.dir
+D:/code/cxx_test/NodeEditor/cmake-build-debug-ucrt/CMakeFiles/NodeEditor_autogen.dir

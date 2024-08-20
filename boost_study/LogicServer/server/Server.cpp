@@ -4,8 +4,11 @@
 
 #include "Server.h"
 #include "Session.h"
+#include "AsioIOServicePool.h"
 
 #include <iostream>
+
+#include "AsioThreadPool.h"
 
 using namespace boost::asio::ip;
 using namespace std;
@@ -34,6 +37,8 @@ void Server::handleAccept(std::shared_ptr<Session> newSession, const boost::syst
 }
 
 void Server::startAccept() {
+    // auto& netxIoc = AsioIOServicePool::getInstance()->getIOService();
+    // auto& ioc = AsioThreadPool::getInstance()->getIoService();
     std::shared_ptr<Session> newSession = std::make_shared<Session>(ioc_,this);
     acceptor_.async_accept(
         newSession->getSocket(),

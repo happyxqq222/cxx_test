@@ -20,6 +20,8 @@ Boost_DIR:PATH=/usr/local/lib/cmake/Boost-1.85.0
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/local/include
 
+Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/local/lib/libboost_thread.so.1.85.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -33,8 +35,8 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable colored diagnostics throughout.
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:UNINITIALIZED=/usr/bin/g++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -59,8 +61,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:UNINITIALIZED=/usr/bin/gcc
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -236,6 +238,9 @@ TBB_DIR:PATH=/usr/local/lib/cmake/TBB
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.85.0
 
+//The directory containing a CMake configuration file for boost_thread.
+boost_thread_DIR:PATH=/usr/local/lib/cmake/boost_thread-1.85.0
+
 //Value Computed by CMake
 client_BINARY_DIR:STATIC=/tmp/tmp.SMBWUktNDy/cmake-build-debug-remote-host/client
 
@@ -351,6 +356,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/tmp/tmp.SMBWUktNDy
@@ -419,9 +426,11 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/local/lib/cmake/Boost-1.85.0/BoostConfig.cmake][c ][v1.85.0(1.85.0)]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/local/lib/cmake/Boost-1.85.0/BoostConfig.cmake][cfound components: thread ][v1.85.0(1.85.0)]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_thread_DIR
+boost_thread_DIR-ADVANCED:INTERNAL=1
 
